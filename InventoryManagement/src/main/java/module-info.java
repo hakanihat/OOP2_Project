@@ -9,7 +9,14 @@ module bg.tu_varna.sit.inventorymanagement {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires log4j;
+    requires org.hibernate.orm.core;
+    requires java.persistence;
 
-    opens bg.tu_varna.sit.inventorymanagement to javafx.fxml;
-    exports bg.tu_varna.sit.inventorymanagement;
+
+    exports bg.tu_varna.sit.inventorymanagement.application;
+    opens bg.tu_varna.sit.inventorymanagement.application to javafx.fxml;
+
+    exports bg.tu_varna.sit.inventorymanagement.presentation.controllers;
+    opens bg.tu_varna.sit.inventorymanagement.presentation.controllers to javafx.fxml;
 }
