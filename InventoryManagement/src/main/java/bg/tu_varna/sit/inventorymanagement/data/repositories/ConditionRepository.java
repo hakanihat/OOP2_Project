@@ -79,7 +79,7 @@ public class ConditionRepository implements DAORepository<Condition>{
         }catch (Exception e){
             log.error("Get Condition error: " +e.getMessage());
         }finally {
-            transaction.commit();;
+            transaction.commit();
         }
         return conditions;
     }
@@ -96,7 +96,7 @@ public class ConditionRepository implements DAORepository<Condition>{
         }catch (Exception e){
             log.error("Get Admin error: " +e.getMessage());
         }finally {
-            transaction.commit();;
+            transaction.commit();
         }
         return admins;
     }
