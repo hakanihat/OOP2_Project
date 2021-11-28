@@ -1,7 +1,7 @@
 package bg.tu_varna.sit.inventorymanagement.data.repositories;
 
 import bg.tu_varna.sit.inventorymanagement.data.access.Connection;
-import bg.tu_varna.sit.inventorymanagement.data.entities.Product;
+
 import bg.tu_varna.sit.inventorymanagement.data.entities.ProductType;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -32,7 +32,8 @@ public class ProductTypeRepository implements DAORepository<ProductType>{
             log.error("Product type save error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
     }
 
     @Override
@@ -47,7 +48,8 @@ public class ProductTypeRepository implements DAORepository<ProductType>{
             log.error("Product type update error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -62,7 +64,8 @@ public class ProductTypeRepository implements DAORepository<ProductType>{
             log.error("Product type delete error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -78,7 +81,8 @@ public class ProductTypeRepository implements DAORepository<ProductType>{
             log.error("Get Product type error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
         return productTypes;
     }
 
@@ -95,7 +99,8 @@ public class ProductTypeRepository implements DAORepository<ProductType>{
             log.error("Get Product types error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
         return productTypes;
     }
 }

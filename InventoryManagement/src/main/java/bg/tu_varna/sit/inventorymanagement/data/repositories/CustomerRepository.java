@@ -32,7 +32,8 @@ public class CustomerRepository implements DAORepository<Customer>{
             log.error("Customer save error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
     }
 
     @Override
@@ -47,7 +48,8 @@ public class CustomerRepository implements DAORepository<Customer>{
             log.error("Customer update error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -62,7 +64,8 @@ public class CustomerRepository implements DAORepository<Customer>{
             log.error("Customer delete error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -78,7 +81,8 @@ public class CustomerRepository implements DAORepository<Customer>{
             log.error("Get Customer error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
         return customers;
     }
 
@@ -95,7 +99,8 @@ public class CustomerRepository implements DAORepository<Customer>{
             log.error("Get Customer error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
         return customers;
     }
 }

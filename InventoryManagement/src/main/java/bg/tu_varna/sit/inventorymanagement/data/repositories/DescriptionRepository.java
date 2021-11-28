@@ -1,7 +1,6 @@
 package bg.tu_varna.sit.inventorymanagement.data.repositories;
 
 import bg.tu_varna.sit.inventorymanagement.data.access.Connection;
-import bg.tu_varna.sit.inventorymanagement.data.entities.CustomerBoard;
 import bg.tu_varna.sit.inventorymanagement.data.entities.Description;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -32,7 +31,8 @@ public class DescriptionRepository implements DAORepository<Description>{
             log.error("Description save error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
     }
 
     @Override
@@ -47,7 +47,8 @@ public class DescriptionRepository implements DAORepository<Description>{
             log.error("Description board update error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }  session.close();
     }
 
     @Override
@@ -62,7 +63,8 @@ public class DescriptionRepository implements DAORepository<Description>{
             log.error("Description board delete error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -78,7 +80,8 @@ public class DescriptionRepository implements DAORepository<Description>{
             log.error("Get Description error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
         return description;
     }
 
@@ -95,7 +98,8 @@ public class DescriptionRepository implements DAORepository<Description>{
             log.error("Get Description error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }  session.close();
         return description;
     }
 }

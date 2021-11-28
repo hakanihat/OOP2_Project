@@ -33,7 +33,7 @@ private static class AdminRepositoryHolder {
         }finally {
             transaction.commit();
         }
-
+        session.close();
     }
 
     @Override
@@ -49,7 +49,7 @@ private static class AdminRepositoryHolder {
         }finally {
             transaction.commit();
         }
-
+        session.close();
     }
 
     @Override
@@ -65,6 +65,7 @@ private static class AdminRepositoryHolder {
         }finally {
             transaction.commit();
         }
+        session.close();
 
     }
 
@@ -80,8 +81,9 @@ private static class AdminRepositoryHolder {
         }catch (Exception e){
             log.error("Get Admin error: " +e.getMessage());
         }finally {
-            transaction.commit();;
+            transaction.commit();
         }
+        session.close();
         return admins;
     }
 
@@ -97,8 +99,9 @@ private static class AdminRepositoryHolder {
         }catch (Exception e){
             log.error("Get Admin error: " +e.getMessage());
         }finally {
-            transaction.commit();;
+            transaction.commit();
         }
+        session.close();
         return admins;
     }
 

@@ -1,7 +1,5 @@
 package bg.tu_varna.sit.inventorymanagement.data.repositories;
-
 import bg.tu_varna.sit.inventorymanagement.data.access.Connection;
-import bg.tu_varna.sit.inventorymanagement.data.entities.Description;
 import bg.tu_varna.sit.inventorymanagement.data.entities.Mol;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -33,7 +31,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("MOL save error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }    session.close();
     }
 
     @Override
@@ -48,7 +47,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("MOL update error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
     }
 
     @Override
@@ -63,7 +63,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("MOL board delete error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -79,7 +80,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("Get Mol error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
         return mols;
     }
 
@@ -96,7 +98,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("Get all Mols error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }  session.close();
         return mols;
     }
 }

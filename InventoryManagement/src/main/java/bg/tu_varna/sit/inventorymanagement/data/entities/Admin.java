@@ -2,11 +2,13 @@ package bg.tu_varna.sit.inventorymanagement.data.entities;
 
 
 import javax.persistence.*;
+import java.io.Serial;
 import java.io.Serializable;
 
 @Table(name= "admins")
 @Entity
 public class Admin implements Serializable {
+    @Serial
     private static final long serialVersionUID =1L;
 
     @Id

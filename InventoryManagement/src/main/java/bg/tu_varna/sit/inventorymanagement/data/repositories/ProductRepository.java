@@ -1,7 +1,6 @@
 package bg.tu_varna.sit.inventorymanagement.data.repositories;
 
 import bg.tu_varna.sit.inventorymanagement.data.access.Connection;
-import bg.tu_varna.sit.inventorymanagement.data.entities.Mol;
 import bg.tu_varna.sit.inventorymanagement.data.entities.Product;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -32,7 +31,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Product save error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
     }
 
     @Override
@@ -47,7 +47,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Product update error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }  session.close();
     }
 
     @Override
@@ -62,7 +63,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Product delete error" + e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
     }
 
     @Override
@@ -78,7 +80,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Get Product error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        }session.close();
         return products;
     }
 
@@ -95,7 +98,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Get Products error: " +e.getMessage());
         }finally {
             transaction.commit();
-        }
+
+        } session.close();
         return products;
     }
 }
