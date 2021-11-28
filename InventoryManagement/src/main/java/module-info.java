@@ -12,7 +12,7 @@ module bg.tu_varna.sit.inventorymanagement {
     requires log4j;
     requires org.hibernate.orm.core;
     requires java.persistence;
-
+    requires java.naming;
 
     exports bg.tu_varna.sit.inventorymanagement.application;
     opens bg.tu_varna.sit.inventorymanagement.application to javafx.fxml;
