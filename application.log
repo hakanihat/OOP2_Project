@@ -4,3 +4,9 @@
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.application.HelloApplication  - Sorry, the main fxml could not be loaded
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.application.HelloApplication  - Sorry, the main fxml could not be loaded
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.application.HelloApplication  - Sorry, the main fxml could not be loaded
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.application.HelloApplication  - Sorry, the main fxml could not be loaded
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.application.HelloApplication  - Sorry, the main fxml could not be loaded
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.application.HelloApplication  - Sorry, the main fxml could not be loaded
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.data.access.Connection  - Initial SessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.data.access.Connection  - Initial SessionFactory created failedorg.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [bg.tu_varna.sit.example.data.entities.Admin]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.inventorymanagement.data.access.Connection  - Initial SessionFactory created failedorg.hibernate.MappingException: Could not instantiate persister org.hibernate.persister.entity.SingleTableEntityPersister

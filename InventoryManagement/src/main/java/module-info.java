@@ -13,6 +13,14 @@ module bg.tu_varna.sit.inventorymanagement {
     requires org.hibernate.orm.core;
     requires java.persistence;
     requires java.naming;
+    requires java.sql;
+
+    opens bg.tu_varna.sit.inventorymanagement.data.entities to org.hibernate.orm.core;
+    exports bg.tu_varna.sit.inventorymanagement.data.entities;
+
+    opens bg.tu_varna.sit.inventorymanagement.data.access to org.hibernate.orm.core;
+    exports bg.tu_varna.sit.inventorymanagement.data.access;
+
 
     exports bg.tu_varna.sit.inventorymanagement.application;
     opens bg.tu_varna.sit.inventorymanagement.application to javafx.fxml;
