@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="hibernate configuraciq">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/models/AdminListViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/InventoryManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/InventoryManagement.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/module-info.class" afterDir="false" />
-    </list>
+    <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="Testing services" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +49,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -153,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638060452331</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Testing services">
+      <created>1638062947007</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638062947007</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Testing services">
+      <created>1638063300326</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638063300326</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +175,8 @@
     <MESSAGE value="repository classes" />
     <MESSAGE value="session close" />
     <MESSAGE value="hibernate configuraciq" />
-    <option name="LAST_COMMIT_MESSAGE" value="hibernate configuraciq" />
+    <MESSAGE value="Testing services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
