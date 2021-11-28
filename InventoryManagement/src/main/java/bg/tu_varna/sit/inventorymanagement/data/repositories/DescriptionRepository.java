@@ -12,7 +12,7 @@ import java.util.List;
 public class DescriptionRepository implements DAORepository<Description>{
 
     private static final Logger log = Logger.getLogger(DescriptionRepository.class);
-    private static DescriptionRepository getInstance(){
+    public static DescriptionRepository getInstance(){
         return DescriptionRepository.DescriptionRepositoryHolder.INSTANCE;}
 
 

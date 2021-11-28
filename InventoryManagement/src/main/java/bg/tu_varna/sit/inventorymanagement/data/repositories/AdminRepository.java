@@ -12,7 +12,7 @@ import java.util.List;
 public class AdminRepository implements DAORepository<Admin>{
 
     private static final Logger log = Logger.getLogger(AdminRepository.class);
-    private static AdminRepository getInstance(){
+    public static AdminRepository getInstance(){
         return AdminRepository.AdminRepositoryHolder.INSTANCE;}
 
 

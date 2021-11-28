@@ -11,7 +11,7 @@ import java.util.List;
 public class MolRepository implements  DAORepository<Mol>{
 
     private static final Logger log = Logger.getLogger(MolRepository.class);
-    private static MolRepository getInstance(){
+    public static MolRepository getInstance(){
         return MolRepository.MolRepositoryHolder.INSTANCE;}
 
 

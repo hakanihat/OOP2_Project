@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ConditionRepository implements DAORepository<Condition>{
     private static final Logger log = Logger.getLogger(ConditionRepository.class);
-    private static ConditionRepository getInstance(){
+    public static ConditionRepository getInstance(){
         return ConditionRepository.ConditionRepositoryHolder.INSTANCE;}
 
 

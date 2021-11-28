@@ -12,7 +12,7 @@ import java.util.List;
 public class ProductRepository implements DAORepository<Product>{
 
     private static final Logger log = Logger.getLogger(ProductRepository.class);
-    private static ProductRepository getInstance(){
+    public static ProductRepository getInstance(){
         return ProductRepository.ProductRepositoryHolder.INSTANCE;}
 
 
