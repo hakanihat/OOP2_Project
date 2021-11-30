@@ -11,7 +11,7 @@ public class Constants {
     }
 
     public static class Values {
-        public static final String Title = "Example App";
+        public static final String Title = "LOGIN";
     }
 
 }
