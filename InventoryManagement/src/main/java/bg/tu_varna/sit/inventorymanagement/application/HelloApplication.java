@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         PropertyConfigurator.configure(HelloApplication.class.getResource(Constants.Configurations.LOG4J_PROPERTIES));
-        URL path = getClass().getResource(Constants.View.HELLO_VIEW);
+        URL path = getClass().getResource(Constants.View.LOGIN_VIEW);
 
         if(path!=null)
         {
@@ -29,10 +29,8 @@ public class HelloApplication extends Application {
             stage.setTitle(Constants.Values.Title);
             stage.setScene(scene);
             stage.setResizable(false);
-            stage.setMaxWidth(780);
-            stage.setMaxHeight(630);
-            stage.setWidth(320);
-            stage.setHeight(240);
+            stage.setWidth(600);
+            stage.setHeight(400);
             stage.show();
         } else {
             log.error("Sorry, the main fxml could not be loaded");
