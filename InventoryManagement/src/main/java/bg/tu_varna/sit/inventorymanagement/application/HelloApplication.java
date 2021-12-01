@@ -1,6 +1,8 @@
 package bg.tu_varna.sit.inventorymanagement.application;
 
 import bg.tu_varna.sit.inventorymanagement.common.Constants;
+import bg.tu_varna.sit.inventorymanagement.presentation.controllers.HelloController;
+import bg.tu_varna.sit.inventorymanagement.presentation.controllers.LoginController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,8 +25,10 @@ public class HelloApplication extends Application {
 
         if(path!=null)
         {
-            Parent root = FXMLLoader.load(path);
-            Scene scene = new Scene(root);
+            FXMLLoader fxmlLoader = new FXMLLoader(path);
+            fxmlLoader.setController(new LoginController(stage));
+            Parent root = fxmlLoader.load();
+            Scene scene = new Scene(root);//
             scene.setFill(Color.TRANSPARENT);
             stage.setTitle(Constants.Values.Title);
             stage.setScene(scene);

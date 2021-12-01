@@ -4,18 +4,18 @@ import bg.tu_varna.sit.inventorymanagement.application.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.ADMIN_VIEW;
+import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.MOL_VIEW;
+
 public class LoginController {
-    public LoginController(){ }
+   Stage s =new Stage();
 
     @FXML
     private Button logButton;
@@ -29,8 +29,44 @@ public class LoginController {
     @FXML
     private PasswordField password;
 
-    public void userLogin(ActionEvent event) throws IOException{
-       // checkLogin();
+    @FXML
+    private RadioButton asAdmin;
+
+    @FXML
+    private RadioButton asMol;
+
+    public LoginController(){ }
+
+    public LoginController(Stage stage){
+        s=stage;
+    }
+    @FXML
+    public void userLogin() {
+        if(asAdmin.isSelected())
+        {
+      try{
+          s.close();
+          FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_VIEW));
+          Stage stage = new Stage();
+         fxmlLoader.setController(new AdminController(stage));
+          Parent root1 = (Parent) fxmlLoader.load();
+          stage.setScene(new Scene(root1));
+          stage.show();
+      }catch (Exception e){
+          e.printStackTrace();
+      }}
+        else if(asMol.isSelected())
+        { try{
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(MOL_VIEW));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new MolController(stage));
+            Parent root2 = fxmlLoader.load();
+            stage.setScene(new Scene(root2));
+            stage.show();
+            }catch (Exception e)
+             {e.printStackTrace();}
+        }
     }
 
     /*private void checkLogin() throws IOException{
