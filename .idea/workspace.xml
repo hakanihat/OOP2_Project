@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="Panels...">
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/MolController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/adminView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/molView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/userView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/application/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/application/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/common/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/loginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/application/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/application/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/common/Constants$Configurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/common/Constants$Configurations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/common/Constants$Values.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/common/Constants$Values.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/common/Constants$View.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/common/Constants$View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/loginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638300537677</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Panels...">
+      <created>1638387299572</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638387299616</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
