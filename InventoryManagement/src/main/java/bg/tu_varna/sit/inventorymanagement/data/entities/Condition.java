@@ -15,8 +15,8 @@ public class Condition implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PK_Condition",nullable = false)
-    private  Long pkCondition;
+    @Column(name = "id_condition",nullable = false)
+    private  Long idCondition;
 
     @Column(name = "prod_condition")
     private  String prodCondition;
@@ -32,11 +32,11 @@ public class Condition implements Serializable {
     }
 
     public Long getPkCondition() {
-        return pkCondition;
+        return idCondition;
     }
 
-    public void setPkCondition(Long pkCondition) {
-        this.pkCondition = pkCondition;
+    public void setPkCondition(Long idCondition) {
+        this.idCondition = idCondition;
     }
 
     public String getProdCondition() {
@@ -58,7 +58,7 @@ public class Condition implements Serializable {
     @Override
     public String toString() {
         return "Condition{" +
-                "pkCondition=" + pkCondition +
+                "idCondition=" + idCondition +
                 ", prodCondition='" + prodCondition + '\'' +
                 '}';
     }

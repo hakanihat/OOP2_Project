@@ -15,8 +15,14 @@ public class Product implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @Column(name = "PK_inventory_number",nullable = false)
-    private  Long pkInventoryNumber;
+    @Column(name = "id_inventory_number",nullable = false)
+    private  Long idInventoryNumber;
+
+    @Column(name = "description")
+    private  String description;
+
+    @Column(name = "product_type")
+    private  String prodType;
 
     @Column(name = "prod_status")
     private  boolean prodStatus;
@@ -37,29 +43,42 @@ public class Product implements Serializable{
     @JoinColumn(name = "PK_Condition")
     private Condition byCondition;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "FK_Product_type")
-    private ProductType byProductType;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_amortization", referencedColumnName = "id_amortization")
+    private Amortization amortization;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "MOL_PK_MOL")
     private Mol byMol;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "PK_Description")
-    private Description byDescription;
 
     @OneToMany(mappedBy = "byInventoryNumber")
     private Set<CustomerBoard> products = new HashSet<>();
 
     public Product() {}
 
-    public Long getPkInventoryNumber() {
-        return pkInventoryNumber;
+    public Long getIdInventoryNumber() {
+        return idInventoryNumber;
     }
 
-    public void setPkInventoryNumber(Long pkInventoryNumber) {
-        this.pkInventoryNumber = pkInventoryNumber;
+    public void setIdInventoryNumber(Long idInventoryNumber) {
+        this.idInventoryNumber = idInventoryNumber;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getProdType() {
+        return prodType;
+    }
+
+    public void setProdType(String prodType) {
+        this.prodType = prodType;
     }
 
     public boolean isProdStatus() {
@@ -110,12 +129,12 @@ public class Product implements Serializable{
         this.byCondition = byCondition;
     }
 
-    public ProductType getByProductType() {
-        return byProductType;
+    public Amortization getAmortization() {
+        return amortization;
     }
 
-    public void setByProductType(ProductType byProductType) {
-        this.byProductType = byProductType;
+    public void setAmortization(Amortization amortization) {
+        this.amortization = amortization;
     }
 
     public Mol getByMol() {
@@ -124,14 +143,6 @@ public class Product implements Serializable{
 
     public void setByMol(Mol byMol) {
         this.byMol = byMol;
-    }
-
-    public Description getByDescription() {
-        return byDescription;
-    }
-
-    public void setByDescription(Description byDescription) {
-        this.byDescription = byDescription;
     }
 
     public Set<CustomerBoard> getProducts() {
@@ -145,16 +156,17 @@ public class Product implements Serializable{
     @Override
     public String toString() {
         return "Product{" +
-                "pkInventoryNumber=" + pkInventoryNumber +
+                "idInventoryNumber=" + idInventoryNumber +
+                ", description='" + description + '\'' +
+                ", prodType='" + prodType + '\'' +
                 ", prodStatus=" + prodStatus +
                 ", discardDate=" + discardDate +
                 ", productValue=" + productValue +
                 ", exploatationStart=" + exploatationStart +
                 ", isDiscarded=" + isDiscarded +
                 ", byCondition=" + byCondition +
-                ", byProductType=" + byProductType +
+                ", amortization=" + amortization +
                 ", byMol=" + byMol +
-                ", byDescription=" + byDescription +
                 ", products=" + products +
                 '}';
     }

@@ -73,7 +73,7 @@ public class MolRepository implements  DAORepository<Mol>{
         Transaction transaction = session.beginTransaction();
         List<Mol> mols = new LinkedList<>();
         try{
-            String jpql = "SELECT m FROM Mol m WHERE pkMol ="+id;
+            String jpql = "SELECT m FROM Mol m WHERE idMol ="+id;
             mols.addAll(session.createQuery(jpql, Mol.class).getResultList());
             log.info("Successfully got  Mol!");
         }catch (Exception e){

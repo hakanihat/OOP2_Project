@@ -73,15 +73,16 @@ public class ProductRepository implements DAORepository<Product>{
         Transaction transaction = session.beginTransaction();
         List<Product> products = new LinkedList<>();
         try{
-            String jpql = "SELECT p FROM Product p WHERE pkInventoryNumber ="+id;
+            String jpql = "SELECT p FROM Product p WHERE idInventoryNumber ="+id;
             products.addAll(session.createQuery(jpql, Product.class).getResultList());
             log.info("Successfully got  Product!");
         }catch (Exception e){
             log.error("Get Product error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }session.close();
+        }
         return products;
     }
 

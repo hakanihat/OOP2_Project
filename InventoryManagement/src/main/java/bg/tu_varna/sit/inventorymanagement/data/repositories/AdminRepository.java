@@ -75,7 +75,7 @@ private static class AdminRepositoryHolder {
         Transaction transaction = session.beginTransaction();
         List<Admin> admins = new LinkedList<>();
         try{
-            String jpql = "SELECT a FROM Admin a WHERE pkAdminId ="+id;
+            String jpql = "SELECT a FROM Admin a WHERE idAdmin ="+id;
             admins.addAll(session.createQuery(jpql, Admin.class).getResultList());
             log.info("Successfully got  admin!");
         }catch (Exception e){

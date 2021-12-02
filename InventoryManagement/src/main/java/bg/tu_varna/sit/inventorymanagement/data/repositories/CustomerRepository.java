@@ -74,7 +74,7 @@ public class CustomerRepository implements DAORepository<Customer>{
         Transaction transaction = session.beginTransaction();
         List<Customer> customers = new LinkedList<>();
         try{
-            String jpql = "SELECT cu FROM Customer cu WHERE pkCustomer ="+id;
+            String jpql = "SELECT cu FROM Customer cu WHERE idCustomer ="+id;
             customers.addAll(session.createQuery(jpql, Customer.class).getResultList());
             log.info("Successfully got  customer!");
         }catch (Exception e){

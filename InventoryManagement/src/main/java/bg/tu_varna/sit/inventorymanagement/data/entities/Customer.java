@@ -15,8 +15,8 @@ public class Customer implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PK_Customer",nullable = false)
-    private  Long pkCustomer;
+    @Column(name = "id_customer",nullable = false)
+    private  Long idCustomer;
 
     @Column(name = "cus_name")
     private  String cusName;
@@ -32,8 +32,8 @@ public class Customer implements Serializable {
 
     public Customer() {}
 
-    public Customer(Long pkCustomer, String cusName, String telNum, String email, Set<CustomerBoard> customers) {
-        this.pkCustomer = pkCustomer;
+    public Customer(Long idCustomer, String cusName, String telNum, String email, Set<CustomerBoard> customers) {
+        this.idCustomer = idCustomer;
         this.cusName = cusName;
         this.telNum = telNum;
         this.email = email;
@@ -57,11 +57,11 @@ public class Customer implements Serializable {
     }
 
     public Long getPkCustomer() {
-        return pkCustomer;
+        return idCustomer;
     }
 
     public void setPkCustomer(Long pkCustomer) {
-        this.pkCustomer = pkCustomer;
+        this.idCustomer = pkCustomer;
     }
 
     public String getTelNum() {
@@ -83,7 +83,7 @@ public class Customer implements Serializable {
     @Override
     public String toString() {
         return "Customer{" +
-                "pkCustomer=" + pkCustomer +
+                "pkCustomer=" + idCustomer +
                 ", telNum='" + telNum + '\'' +
                 ", email='" + email + '\'' +
                 '}';

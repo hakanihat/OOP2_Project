@@ -76,7 +76,7 @@ public class ConditionRepository implements DAORepository<Condition>{
         Transaction transaction = session.beginTransaction();
         List<Condition> conditions = new LinkedList<>();//Condition
         try{
-            String jpql = "SELECT c FROM Condition c WHERE pkCondition ="+id;// taka li e?
+            String jpql = "SELECT c FROM Condition c WHERE idCondition ="+id;// taka li e?
             conditions.addAll(session.createQuery(jpql, Condition.class).getResultList());
             log.info("Successfully got  condition!");
         }catch (Exception e){
@@ -94,11 +94,11 @@ public class ConditionRepository implements DAORepository<Condition>{
         Transaction transaction = session.beginTransaction();
         List<Condition> admins = new LinkedList<>();
         try{
-            String jpql = "SELECT a FROM Admin a ";
+            String jpql = "SELECT c FROM Condition c ";
             admins.addAll(session.createQuery(jpql, Condition.class).getResultList());
-            log.info("Successfully got all admins");
+            log.info("Successfully got all conditions");
         }catch (Exception e){
-            log.error("Get Admin error: " +e.getMessage());
+            log.error("Get Condition error: " +e.getMessage());
         }finally {
             transaction.commit();
 

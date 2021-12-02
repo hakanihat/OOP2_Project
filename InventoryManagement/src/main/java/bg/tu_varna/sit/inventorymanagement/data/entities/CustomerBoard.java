@@ -13,8 +13,8 @@ public class CustomerBoard  implements  Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PK_Customer_board",nullable = false)
-    private  Long pkCustomerBoard;
+    @Column(name = "id_customer_board",nullable = false)
+    private  Long idCustomerBoard;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "FK_Customer")
@@ -32,8 +32,8 @@ public class CustomerBoard  implements  Serializable{
 
     public CustomerBoard() {}
 
-    public CustomerBoard(Long pkCustomerBoard, Customer byCustomer, Product byInventoryNumber, Date registeredDate, Date returnDate) {
-        this.pkCustomerBoard = pkCustomerBoard;
+    public CustomerBoard(Long idCustomerBoard, Customer byCustomer, Product byInventoryNumber, Date registeredDate, Date returnDate) {
+        this.idCustomerBoard = idCustomerBoard;
         this.byCustomer = byCustomer;
         this.byInventoryNumber = byInventoryNumber;
         this.registeredDate = registeredDate;
@@ -41,11 +41,11 @@ public class CustomerBoard  implements  Serializable{
     }
 
     public Long getPkCustomerBoard() {
-        return pkCustomerBoard;
+        return idCustomerBoard;
     }
 
     public void setPkCustomerBoard(Long pkCustomerBoard) {
-        this.pkCustomerBoard = pkCustomerBoard;
+        this.idCustomerBoard = pkCustomerBoard;
     }
 
     public Customer getByCustomer() {
@@ -83,7 +83,7 @@ public class CustomerBoard  implements  Serializable{
     @Override
     public String toString() {
         return "CustomerBoard{" +
-                "pkCustomerBoard=" + pkCustomerBoard +
+                "pkCustomerBoard=" + idCustomerBoard +
                 ", byCustomer=" + byCustomer +
                 ", byInventoryNumber=" + byInventoryNumber +
                 ", registeredDate=" + registeredDate +

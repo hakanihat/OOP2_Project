@@ -13,8 +13,8 @@ public class Admin implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PK_Admin_id",nullable = false)
-    private  Long pkAdminId;
+    @Column(name = "id_admin",nullable = false)
+    private  Long idAdmin;
 
     @Column(name = "username",nullable = false)
     private  String username;
@@ -31,7 +31,7 @@ public class Admin implements Serializable {
     }
 
     public Long getId() {
-        return pkAdminId;
+        return idAdmin;
     }
 
     public String getUsername() {
@@ -42,8 +42,8 @@ public class Admin implements Serializable {
         return password;
     }
 
-    public void setId(Long pkAdminId) {
-        this.pkAdminId = pkAdminId;
+    public void setId(Long idAdmin) {
+        this.idAdmin = idAdmin;
     }
 
     public void setUsername(String username) {
@@ -57,7 +57,7 @@ public class Admin implements Serializable {
     @Override
     public String toString() {
         return "Admin{" +
-                "pkAdminId=" + pkAdminId +
+                "pkAdminId=" + idAdmin +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

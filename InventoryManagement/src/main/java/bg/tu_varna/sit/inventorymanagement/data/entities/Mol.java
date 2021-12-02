@@ -14,8 +14,8 @@ public class Mol implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PK_MOL",nullable = false)
-    private  Long pkMol;
+    @Column(name = "id_mol",nullable = false)
+    private  Long idMol;
 
     @Column(name = "mol_name")
     private  String molName;
@@ -37,8 +37,8 @@ public class Mol implements Serializable {
 
     public Mol() {}
 
-    public Mol(Long pkMol, String molName, String telNum, String email, String username, String password, Set<Product> products) {
-        this.pkMol = pkMol;
+    public Mol(Long idMol, String molName, String telNum, String email, String username, String password, Set<Product> products) {
+        this.idMol = idMol;
         this.molName = molName;
         this.telNum = telNum;
         this.email = email;
@@ -48,11 +48,11 @@ public class Mol implements Serializable {
     }
 
     public Long getPkMol() {
-        return pkMol;
+        return idMol;
     }
 
     public void setPkMol(Long pkMol) {
-        this.pkMol = pkMol;
+        this.idMol = idMol;
     }
 
     public String getMolName() {
@@ -98,7 +98,7 @@ public class Mol implements Serializable {
     @Override
     public String toString() {
         return "Mol{" +
-                "pkMol=" + pkMol +
+                "pkMol=" + idMol +
                 ", molName='" + molName + '\'' +
                 ", telNum='" + telNum + '\'' +
                 ", email='" + email + '\'' +

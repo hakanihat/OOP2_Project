@@ -19,10 +19,9 @@
         <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.Condition"/>
         <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.Customer"/>
         <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.CustomerBoard"/>
-        <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.Description"/>
         <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.Mol"/>
         <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.Product"/>
-        <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.ProductType"/>
+        <mapping class="bg.tu_varna.sit.inventorymanagement.data.entities.Amortization"/>
 
     </session-factory>
 </hibernate-configuration>
