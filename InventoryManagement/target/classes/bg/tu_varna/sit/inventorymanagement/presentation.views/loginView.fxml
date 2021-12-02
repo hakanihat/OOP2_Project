@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" >
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="235.0" BorderPane.alignment="CENTER">
          <children>
@@ -44,7 +44,7 @@
             </Label>
             <TextField fx:id="username" layoutX="135.0" layoutY="188.0" promptText="Username" />
             <PasswordField fx:id="password" layoutX="135.0" layoutY="255.0" promptText="Password" />
-            <Button fx:id="logButton" layoutX="134.0" layoutY="306.0" mnemonicParsing="false" onAction="#userLogin" style="-fx-background-color: #FFFFFF;" text="Log in" />
+            <Button fx:id="logButton" layoutX="134.0" layoutY="306.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="40.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;" text="Log in" />
             <Label fx:id="wrongLogin" layoutX="183.0" layoutY="158.0" textFill="RED" />
             <RadioButton fx:id="asAdmin" layoutX="35.0" layoutY="158.0" mnemonicParsing="false" selected="true" text="ADMIN">
                <toggleGroup>

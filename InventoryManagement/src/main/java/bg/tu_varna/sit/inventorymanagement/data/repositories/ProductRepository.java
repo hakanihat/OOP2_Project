@@ -31,8 +31,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Product save error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -47,8 +47,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Product update error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }  session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -63,8 +63,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Product delete error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        } session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -99,8 +99,8 @@ public class ProductRepository implements DAORepository<Product>{
             log.error("Get Products error: " +e.getMessage());
         }finally {
             transaction.commit();
-
-        } session.close();
+            session.close();
+        }
         return products;
     }
 }

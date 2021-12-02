@@ -30,8 +30,9 @@ public class AmortizationRepository implements DAORepository<Amortization> {
             log.error("Amortization save error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
     }
 
     @Override
@@ -46,8 +47,9 @@ public class AmortizationRepository implements DAORepository<Amortization> {
             log.error("Amortization update error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
     }
 
     @Override
@@ -62,8 +64,9 @@ public class AmortizationRepository implements DAORepository<Amortization> {
             log.error("Amortization delete error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
+
         }
-        session.close();
 
     }
 
@@ -80,8 +83,9 @@ public class AmortizationRepository implements DAORepository<Amortization> {
             log.error("Get Amortization error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
         return admins;
     }
 
@@ -98,8 +102,9 @@ public class AmortizationRepository implements DAORepository<Amortization> {
             log.error("Get Amortization error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
         return admins;
     }
 }

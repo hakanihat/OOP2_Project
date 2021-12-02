@@ -31,8 +31,8 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
             log.error("Customer board save error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -47,8 +47,8 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
             log.error("Customer board update error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        } session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -63,8 +63,8 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
             log.error("Customer board delete error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -80,8 +80,9 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
             log.error("Get Customer Board error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }session.close();
+        }
         return customerBoards;
     }
 
@@ -98,8 +99,9 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
             log.error("Get Customer Boards error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }session.close();
+        }
         return customerBoards;
     }
 }

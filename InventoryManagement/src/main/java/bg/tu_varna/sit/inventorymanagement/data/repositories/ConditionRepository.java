@@ -31,8 +31,8 @@ public class ConditionRepository implements DAORepository<Condition>{
             log.error("Condition save error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }   session.close();
+            session.close();
+        }
 
     }
 
@@ -48,8 +48,9 @@ public class ConditionRepository implements DAORepository<Condition>{
             log.error("Condition update error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }  session.close();
+        }
 
     }
 
@@ -65,8 +66,9 @@ public class ConditionRepository implements DAORepository<Condition>{
             log.error("Condition delete error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }  session.close();
+        }
 
     }
 
@@ -83,8 +85,9 @@ public class ConditionRepository implements DAORepository<Condition>{
             log.error("Get Condition error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }session.close();
+        }
         return conditions;
     }
 
@@ -101,8 +104,9 @@ public class ConditionRepository implements DAORepository<Condition>{
             log.error("Get Condition error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
 
-        }  session.close();
+        }
         return admins;
     }
 

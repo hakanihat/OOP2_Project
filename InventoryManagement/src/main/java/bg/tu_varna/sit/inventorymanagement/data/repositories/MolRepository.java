@@ -31,8 +31,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("MOL save error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }    session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -47,8 +47,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("MOL update error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        } session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -63,8 +63,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("MOL board delete error" + e.getMessage());
         }finally {
             transaction.commit();
-
-        }session.close();
+            session.close();
+        }
     }
 
     @Override
@@ -80,8 +80,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("Get Mol error: " +e.getMessage());
         }finally {
             transaction.commit();
-
-        }session.close();
+            session.close();
+        }
         return mols;
     }
 
@@ -98,8 +98,8 @@ public class MolRepository implements  DAORepository<Mol>{
             log.error("Get all Mols error: " +e.getMessage());
         }finally {
             transaction.commit();
-
-        }  session.close();
+            session.close();
+        }
         return mols;
     }
 }

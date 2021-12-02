@@ -32,8 +32,9 @@ private static class AdminRepositoryHolder {
             log.error("Admin save error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
     }
 
     @Override
@@ -48,8 +49,9 @@ private static class AdminRepositoryHolder {
             log.error("Admin update error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
     }
 
     @Override
@@ -64,8 +66,9 @@ private static class AdminRepositoryHolder {
             log.error("Admin delete error" + e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
 
     }
 
@@ -82,8 +85,9 @@ private static class AdminRepositoryHolder {
             log.error("Get Admin error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
         return admins;
     }
 
@@ -100,8 +104,9 @@ private static class AdminRepositoryHolder {
             log.error("Get Admin error: " +e.getMessage());
         }finally {
             transaction.commit();
+            session.close();
         }
-        session.close();
+
         return admins;
     }
 
