@@ -4,6 +4,7 @@ package bg.tu_varna.sit.inventorymanagement.data.entities;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 @Table(name= "admins")
 @Entity
@@ -52,6 +53,19 @@ public class Admin implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Admin admin = (Admin) o;
+        return Objects.equals(username, admin.username) && Objects.equals(password, admin.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, password);
     }
 
     @Override

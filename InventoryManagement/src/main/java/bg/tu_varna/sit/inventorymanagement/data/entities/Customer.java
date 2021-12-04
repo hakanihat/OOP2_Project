@@ -32,12 +32,10 @@ public class Customer implements Serializable {
 
     public Customer() {}
 
-    public Customer(Long idCustomer, String cusName, String telNum, String email, Set<CustomerBoard> customers) {
-        this.idCustomer = idCustomer;
+    public Customer(String cusName, String telNum, String email) {
         this.cusName = cusName;
         this.telNum = telNum;
         this.email = email;
-        this.customers = customers;
     }
 
     public String getCusName() {

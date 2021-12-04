@@ -27,7 +27,7 @@
    <center>
       <AnchorPane prefHeight="400.0" prefWidth="365.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="119.0" fitWidth="98.0" layoutX="111.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="119.0" fitWidth="98.0" layoutX="111.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../images/lock.png" />
                </image>
@@ -45,13 +45,13 @@
             <TextField fx:id="username" layoutX="135.0" layoutY="188.0" promptText="Username" />
             <PasswordField fx:id="password" layoutX="135.0" layoutY="255.0" promptText="Password" />
             <Button fx:id="logButton" layoutX="134.0" layoutY="306.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="40.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;" text="Log in" />
-            <Label fx:id="wrongLogin" layoutX="183.0" layoutY="158.0" textFill="RED" />
+            <Label fx:id="wrongLogin" layoutX="35.0" layoutY="127.0" prefHeight="18.0" prefWidth="266.0" textFill="RED" />
             <RadioButton fx:id="asAdmin" layoutX="35.0" layoutY="158.0" mnemonicParsing="false" selected="true" text="ADMIN">
                <toggleGroup>
                   <ToggleGroup fx:id="ch" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="asMol" layoutX="166.0" layoutY="158.0" mnemonicParsing="false" text="MOL" toggleGroup="$ch" />
+            <RadioButton fx:id="asMol" layoutX="160.0" layoutY="158.0" mnemonicParsing="false" text="MOL" toggleGroup="$ch" />
          </children>
       </AnchorPane>
    </center>

@@ -3,13 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="441.0" prefWidth="509.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.inventorymanagement.presentation.views.CustomerRegisterView">
+<AnchorPane prefHeight="192.0" prefWidth="388.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.inventorymanagement.presentation.views.CustomerRegisterView">
     <children>
-        <Button fx:id="cusButton" layoutX="223.0" layoutY="56.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Бракувай">
+        <Button fx:id="cusButton" layoutX="223.0" layoutY="67.0" mnemonicParsing="false" onAction="#а" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #F8F8FF;" text="Калкулирай">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
@@ -19,7 +19,7 @@
                 <Font name="System Bold Italic" size="12.0" />
             </font>
         </Label>
-        <ListView layoutX="27.0" layoutY="118.0" prefHeight="304.0" prefWidth="457.0" />
         <ComboBox layoutX="55.0" layoutY="67.0" prefWidth="150.0" />
+      <TextField layoutX="55.0" layoutY="113.0" />
     </children>
 </AnchorPane>

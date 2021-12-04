@@ -40,15 +40,15 @@ public class Product implements Serializable{
     private boolean isDiscarded;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "PK_Condition")
+    @JoinColumn(name = "id_condition")
     private Condition byCondition;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_amortization", referencedColumnName = "id_amortization")
-    private Amortization amortization;
+    private Amortization byAmortization;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "MOL_PK_MOL")
+    @JoinColumn(name = "id_mol")
     private Mol byMol;
 
 
@@ -129,12 +129,12 @@ public class Product implements Serializable{
         this.byCondition = byCondition;
     }
 
-    public Amortization getAmortization() {
-        return amortization;
+    public Amortization getByAmortization() {
+        return byAmortization;
     }
 
-    public void setAmortization(Amortization amortization) {
-        this.amortization = amortization;
+    public void setByAmortization(Amortization byAmortization) {
+        this.byAmortization = byAmortization;
     }
 
     public Mol getByMol() {
@@ -165,7 +165,7 @@ public class Product implements Serializable{
                 ", exploatationStart=" + exploatationStart +
                 ", isDiscarded=" + isDiscarded +
                 ", byCondition=" + byCondition +
-                ", amortization=" + amortization +
+                ", byAmortization=" + byAmortization +
                 ", byMol=" + byMol +
                 ", products=" + products +
                 '}';

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class AdminService {
-    private final AdminRepository repository = AdminRepository.getInstance();
+    private final AdminRepository repositoryAdmin = AdminRepository.getInstance();
 
     public static AdminService getInstance(){
         return AdminServiceHolder.INSTANCE;
@@ -20,8 +20,9 @@ public class AdminService {
         public static final AdminService INSTANCE = new AdminService();
     }
 
+
     public ObservableList<AdminListViewModel> getAllAdmin(){
-        List<Admin> admins = repository.getAll();
+        List<Admin> admins = repositoryAdmin.getAll();
 
         return FXCollections.observableList(
                 admins.stream().map(a -> new AdminListViewModel(

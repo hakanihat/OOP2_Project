@@ -17,11 +17,11 @@ public class CustomerBoard  implements  Serializable{
     private  Long idCustomerBoard;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_Customer")
+    @JoinColumn(name = "id_customer")
     private Customer byCustomer;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_inventory_number")
+    @JoinColumn(name = "id_inventory_number")
     private Product byInventoryNumber;
 
     @Column(name = "registered_date")

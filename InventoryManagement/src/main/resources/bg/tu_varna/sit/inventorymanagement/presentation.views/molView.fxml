@@ -6,12 +6,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="817.0" style="-fx-background-color: #120632;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="68.0" prefWidth="817.0" style="-fx-background-color: #2E165B;">
          <children>
-            <Button layoutX="713.0" layoutY="8.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #F8F8FF;" text="Изход" />
+            <Button fx:id="logOutButton" layoutX="713.0" layoutY="8.0" mnemonicParsing="false" onAction="#logOutMol" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: #F8F8FF;" text="Изход" />
          </children>
       </AnchorPane>
       <AnchorPane layoutY="62.0" prefHeight="140.0" prefWidth="817.0" style="-fx-background-color: #6F6CB5;">

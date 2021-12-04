@@ -10,12 +10,12 @@
    <children>
       <AnchorPane prefHeight="68.0" prefWidth="817.0" style="-fx-background-color: #2E165B;">
          <children>
-            <Button layoutX="713.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="89.0" style="-fx-background-color: #F8F8FF;" text="Изход" />
+            <Button fx:id="logOutButton" layoutX="713.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOutAdmin" prefHeight="44.0" prefWidth="89.0" style="-fx-background-color: #F8F8FF;" text="Изход" />
          </children>
       </AnchorPane>
       <AnchorPane layoutY="62.0" prefHeight="140.0" prefWidth="817.0" style="-fx-background-color: #6F6CB5;">
          <children>
-            <Button layoutX="73.0" layoutY="37.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Клиент" textAlignment="CENTER">
+            <Button fx:id="openRegisterCustomerButton" layoutX="73.0" layoutY="37.0" mnemonicParsing="false" onAction="#clientRegisterByAdmin" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Клиент" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
