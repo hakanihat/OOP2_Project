@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="172.0" prefWidth="354.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.inventorymanagement.presentation.views.CustomerRegisterView">
     <children>
-        <Button fx:id="conButton" layoutX="129.0" layoutY="109.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #F8F8FF;" text="Въведи">
+        <Button fx:id="conButton" layoutX="129.0" layoutY="109.0" mnemonicParsing="false" onAction="#addCondition" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #F8F8FF;" text="Въведи">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>

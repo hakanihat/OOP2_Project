@@ -1,7 +1,6 @@
 package bg.tu_varna.sit.inventorymanagement.presentation.controllers;
 
 import bg.tu_varna.sit.inventorymanagement.business.services.CustomerService;
-import bg.tu_varna.sit.inventorymanagement.presentation.models.AdminListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.CustomerListViewModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

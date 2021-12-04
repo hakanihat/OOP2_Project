@@ -26,9 +26,8 @@ public class Condition implements Serializable {
 
     public Condition() {}
 
-    public Condition(String prodCondition, Set<Product> products) {
+    public Condition(String prodCondition) {
         this.prodCondition = prodCondition;
-        this.products = products;
     }
 
     public Long getPkCondition() {
