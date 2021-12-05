@@ -21,6 +21,14 @@ public class MolListViewModel {
         this.password = password;
     }
 
+    public MolListViewModel(String molName, String telNum, String email, String username, String password) {
+        this.molName = molName;
+        this.telNum = telNum;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+    }
+
     public String getMolName() {
         return molName;
     }
@@ -80,5 +88,10 @@ public class MolListViewModel {
     @Override
     public int hashCode() {
         return Objects.hash(username, password);
+    }
+
+    @Override
+    public String toString() {
+        return  molName;
     }
 }

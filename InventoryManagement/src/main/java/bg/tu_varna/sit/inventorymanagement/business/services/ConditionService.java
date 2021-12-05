@@ -17,7 +17,7 @@ public class ConditionService {
 
     public void addTheCondition(ConditionListViewModel c)
     {
-        Condition customer=new Condition(c.getProdCondition());
-        repositoryCondition.save(customer);
+        Condition condition=new Condition(c.getProdCondition());
+        repositoryCondition.save(condition);
     }
 }

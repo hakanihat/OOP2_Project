@@ -44,7 +44,7 @@
       </AnchorPane>
       <AnchorPane layoutY="201.0" prefHeight="149.0" prefWidth="817.0" style="-fx-background-color: #6F6CB5;">
          <children>
-            <Button layoutX="110.0" layoutY="41.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="185.0" style="-fx-background-color: #F8F8FF;" text="Въвеждане на&#10;критерий за&#10;бракуване" textAlignment="CENTER">
+            <Button fx:id="openRegisterConditionButton" layoutX="111.0" layoutY="50.0" mnemonicParsing="false" onAction="#conditionRegisterByAdmin" prefHeight="98.0" prefWidth="185.0" style="-fx-background-color: #F8F8FF;" text="Въвеждане на&#10;критерий за&#10;бракуване" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

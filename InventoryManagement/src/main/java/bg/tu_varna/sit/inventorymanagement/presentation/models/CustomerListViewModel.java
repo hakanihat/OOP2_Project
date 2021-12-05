@@ -6,6 +6,9 @@ public class CustomerListViewModel {
     private  String telNum;
     private  String email;
 
+    public CustomerListViewModel() {
+    }
+
     public CustomerListViewModel(String cusName, String telNum, String email) {
         this.cusName=cusName;
         this.telNum=telNum;

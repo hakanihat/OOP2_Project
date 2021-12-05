@@ -3,8 +3,11 @@ package bg.tu_varna.sit.inventorymanagement.presentation.models;
 import java.util.Objects;
 
 public class AdminListViewModel {
-    private final String username;
-    private final String password;
+    private  String username;
+    private  String password;
+
+    public AdminListViewModel() {
+    }
 
     public AdminListViewModel(String username, String password) {
         this.username = username;

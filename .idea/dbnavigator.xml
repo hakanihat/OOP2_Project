@@ -26,8 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="f2e41d4a-3eed-4dc3-8eb6-e82d24a7914b">
-        <schema name="information_schema" object-types="table, view, procedure, function" />
-        <schema name="inventory" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
+        <schema name="inventory" object-types="table, view, procedure, function, index" />
       </connection>
     </loaded-nodes>
   </component>

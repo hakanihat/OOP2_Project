@@ -7,6 +7,8 @@ public class Constants {
         public static final String ADMIN_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/adminView.fxml";
         public static final String MOL_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/molView.fxml";
         public static final String CUSTOMER_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/customerRegisterView.fxml";
+        public static final String CONDITION_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/addConditionView.fxml";
+        public static final String PRODUCT_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml";
     }
 
     public static class Configurations {

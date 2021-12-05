@@ -26,7 +26,7 @@ public class ConditionController {
     }
 
     @FXML
-    public void  addCustomer()
+    public void  addCondition()
     {   ConditionListViewModel addCon = new ConditionListViewModel(condition.getText());
         conService.addTheCondition(addCon);
 
