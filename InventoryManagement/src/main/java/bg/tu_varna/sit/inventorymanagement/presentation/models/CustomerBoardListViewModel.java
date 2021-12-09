@@ -21,6 +21,12 @@ public class CustomerBoardListViewModel {
         this.returnDate = returnDate;
     }
 
+    public CustomerBoardListViewModel(Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate) {
+        this.byCustomer = byCustomer;
+        this.byInventoryNumber = byInventoryNumber;
+        this.registeredDate = registeredDate;
+    }
+
     public CustomerBoardListViewModel(Customer byCustomer) {
         this.byCustomer = byCustomer;
     }

@@ -3,7 +3,7 @@ package bg.tu_varna.sit.inventorymanagement.data.entities;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Table(name= "customer_boards")
 @Entity
@@ -25,20 +25,26 @@ public class CustomerBoard  implements  Serializable{
     private Product byInventoryNumber;
 
     @Column(name = "registered_date")
-    private Date registeredDate;
+    private LocalDate registeredDate;
 
     @Column(name = "return_date")
-    private Date returnDate;
+    private LocalDate returnDate;
 
     public CustomerBoard() {}
 
-    public CustomerBoard(Long idCustomerBoard, Customer byCustomer, Product byInventoryNumber, Date registeredDate, Date returnDate) {
-        this.idCustomerBoard = idCustomerBoard;
+    public CustomerBoard( Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
         this.byCustomer = byCustomer;
         this.byInventoryNumber = byInventoryNumber;
         this.registeredDate = registeredDate;
         this.returnDate = returnDate;
     }
+
+    public CustomerBoard(Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate) {
+        this.byCustomer = byCustomer;
+        this.byInventoryNumber = byInventoryNumber;
+        this.registeredDate = registeredDate;
+    }
+
 
     public Long getPkCustomerBoard() {
         return idCustomerBoard;
@@ -64,19 +70,19 @@ public class CustomerBoard  implements  Serializable{
         this.byInventoryNumber = byInventoryNumber;
     }
 
-    public Date getRegisteredDate() {
+    public LocalDate getRegisteredDate() {
         return registeredDate;
     }
 
-    public void setRegisteredDate(Date registeredDate) {
+    public void setRegisteredDate(LocalDate registeredDate) {
         this.registeredDate = registeredDate;
     }
 
-    public Date getReturnDate() {
+    public LocalDate getReturnDate() {
         return returnDate;
     }
 
-    public void setReturnDate(Date returnDate) {
+    public void setReturnDate(LocalDate returnDate) {
         this.returnDate = returnDate;
     }
 

@@ -17,4 +17,9 @@ public class ConditionListViewModel {
     public void setProdCondition(String prodCondition) {
         this.prodCondition = prodCondition;
     }
+
+    @Override
+    public String toString() {
+        return  prodCondition ;
+    }
 }

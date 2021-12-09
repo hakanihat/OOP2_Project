@@ -69,10 +69,18 @@ public class ProductController implements Initializable {
     @FXML
     public void registerProductByAdmin()
     {
-        ProductListViewModel addProd = new ProductListViewModel(prod_description.getText(),prodType.getValue(),date_discard.getValue(),Double.parseDouble(prod_value.getText()) ,date_exp.getValue(),conditionService.getGoodCondition(),
+     ProductListViewModel addProd = new ProductListViewModel(prod_description.getText(),prodType.getValue(),date_discard.getValue(),Double.parseDouble(prod_value.getText()) ,date_exp.getValue(),conditionService.getGoodCondition(),
                 molService.listViewToEntity(prod_mol.getValue()),amortizationService.stringToEntity(amortizations.getValue()));
         productService.addTheProduct(addProd);
+    }
 
+    @FXML
+    public void enableAmortization()
+    {
+        if(prodType.getValue().equals("МА"))
+            amortizations.setDisable(true);
+        else if(prodType.getValue().equals("ДМА"))
+            amortizations.setDisable(false);
     }
 
 

@@ -5,6 +5,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name= "products")
@@ -57,6 +58,11 @@ public class Product implements Serializable{
 
     public Product() {}
 
+    public Product(Long idInventoryNumber, String description) {
+        this.idInventoryNumber = idInventoryNumber;
+        this.description = description;
+    }
+
     public Product(String description, String prodType, boolean prodStatus, LocalDate discardDate, double productValue, LocalDate exploatationStart, boolean isDiscarded, Condition byCondition, Mol byMol, Amortization byAmortization) {
         this.description = description;
         this.prodType = prodType;
@@ -71,6 +77,18 @@ public class Product implements Serializable{
 
     }
 
+    public Product(String description, String prodType, boolean prodStatus, LocalDate discardDate, double productValue, LocalDate exploatationStart, boolean isDiscarded, Condition byCondition, Mol byMol) {
+        this.description = description;
+        this.prodType = prodType;
+        this.prodStatus = prodStatus;
+        this.discardDate = discardDate;
+        this.productValue = productValue;
+        this.exploatationStart = exploatationStart;
+        this.isDiscarded = isDiscarded;
+        this.byCondition = byCondition;
+        this.byMol = byMol;
+
+    }
     public Long getIdInventoryNumber() {
         return idInventoryNumber;
     }
@@ -163,25 +181,26 @@ public class Product implements Serializable{
         return products;
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Objects.equals(idInventoryNumber, product.idInventoryNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(idInventoryNumber);
+    }
+
     public void setProducts(Set<CustomerBoard> products) {
         this.products = products;
     }
 
     @Override
     public String toString() {
-        return "Product{" +
-                "idInventoryNumber=" + idInventoryNumber +
-                ", description='" + description + '\'' +
-                ", prodType='" + prodType + '\'' +
-                ", prodStatus=" + prodStatus +
-                ", discardDate=" + discardDate +
-                ", productValue=" + productValue +
-                ", exploatationStart=" + exploatationStart +
-                ", isDiscarded=" + isDiscarded +
-                ", byCondition=" + byCondition +
-                ", byAmortization=" + byAmortization +
-                ", byMol=" + byMol +
-                ", products=" + products +
-                '}';
+        return  description ;
     }
 }

@@ -21,6 +21,9 @@ module bg.tu_varna.sit.inventorymanagement {
     opens bg.tu_varna.sit.inventorymanagement.data.access to org.hibernate.orm.core;
     exports bg.tu_varna.sit.inventorymanagement.data.access;
 
+    exports bg.tu_varna.sit.inventorymanagement.presentation.models;
+    opens bg.tu_varna.sit.inventorymanagement.presentation.models to javafx.base;
+
 
     exports bg.tu_varna.sit.inventorymanagement.application;
     opens bg.tu_varna.sit.inventorymanagement.application to javafx.fxml;

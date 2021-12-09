@@ -56,10 +56,7 @@ public class Condition implements Serializable {
 
     @Override
     public String toString() {
-        return "Condition{" +
-                "idCondition=" + idCondition +
-                ", prodCondition='" + prodCondition + '\'' +
-                '}';
+        return  prodCondition ;
     }
 
 }

@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name= "customers")
@@ -79,11 +80,20 @@ public class Customer implements Serializable {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return Objects.equals(cusName, customer.cusName) && Objects.equals(telNum, customer.telNum) && Objects.equals(email, customer.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cusName, telNum, email);
+    }
+
+    @Override
     public String toString() {
-        return "Customer{" +
-                "pkCustomer=" + idCustomer +
-                ", telNum='" + telNum + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return idCustomer+" - "+cusName;
     }
 }
