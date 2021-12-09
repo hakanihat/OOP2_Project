@@ -42,6 +42,9 @@ public class CustomerBoardController implements Initializable {
     private Button cusButton;
 
     @FXML
+    private Button cusButton1;
+
+    @FXML
     private ComboBox<CustomerListViewModel> customersComboBox;
 
     @FXML
@@ -58,12 +61,22 @@ public class CustomerBoardController implements Initializable {
         CustomerBoardListViewModel addToBoard = new CustomerBoardListViewModel(customerService.listViewToEntity(customersComboBox.getValue()),productService.listViewToEntity(productsComboBox.getValue()),localDate);
         isExist= customerBoardService.addToTheBoard(addToBoard);
         if(isExist) {
-            temp = customerBoardService.getAllBoards();
-            boardTable.setItems(temp);
-           // Alert alert=new Alert(Alert.AlertType.INFORMATION,)
+            Alert alert=new Alert(Alert.AlertType.INFORMATION,"The product has been added successfully!",ButtonType.OK);
+            alert.show();
         }
+        else
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"The product has been already added to customer's board!",ButtonType.OK);
+            alert.show();
+        }
+        temp = customerBoardService.getAllBoards();
+        boardTable.setItems(temp);
     }
 
+    @FXML
+    private void boardRemove(){
+
+    }
 
 
     public void fillCustomerId()

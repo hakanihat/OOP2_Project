@@ -56,6 +56,6 @@
          </font>
       </Label>
       <ComboBox fx:id="amortizations" layoutX="104.0" layoutY="401.0" prefHeight="25.0" prefWidth="263.0" />
-      <ComboBox fx:id="prodType" layoutX="103.0" layoutY="113.0" prefHeight="25.0" prefWidth="263.0" />
+      <ComboBox fx:id="prodType" layoutX="103.0" layoutY="113.0" onAction="#enableAmortization" prefHeight="25.0" prefWidth="263.0" />
     </children>
 </AnchorPane>

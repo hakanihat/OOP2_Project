@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Objects;
 
 @Table(name= "customer_boards")
 @Entity
@@ -84,6 +85,19 @@ public class CustomerBoard  implements  Serializable{
 
     public void setReturnDate(LocalDate returnDate) {
         this.returnDate = returnDate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomerBoard board = (CustomerBoard) o;
+        return Objects.equals(byCustomer, board.byCustomer) && Objects.equals(byInventoryNumber, board.byInventoryNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(byCustomer, byInventoryNumber);
     }
 
     @Override

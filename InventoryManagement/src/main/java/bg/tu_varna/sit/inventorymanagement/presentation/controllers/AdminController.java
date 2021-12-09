@@ -30,6 +30,8 @@ public class AdminController {
     @FXML
     private Button boardButton;
 
+
+
     @FXML
     public void boardRegisterByAdmin(){
         try {
@@ -44,6 +46,9 @@ public class AdminController {
             e.printStackTrace();
         }
     }
+
+
+
     @FXML
     public void clientRegisterByAdmin(){
         try {

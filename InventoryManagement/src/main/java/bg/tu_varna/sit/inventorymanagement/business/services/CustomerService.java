@@ -20,10 +20,15 @@ public class CustomerService {
         public static final CustomerService INSTANCE = new CustomerService();
     }
 
-    public void addTheCustomer(CustomerListViewModel c)
+    public boolean addTheCustomer(CustomerListViewModel c)
     {   List<Customer> customers = repositoryCustomer.getAll();
         Customer customer=new Customer(c.getCusName(), c.getTelNum(), c.getEmail());
+        for(Customer cus: customers ){
+            if(cus.equals(customer))
+                return false;
+        }
         repositoryCustomer.save(customer);
+        return true;
     }
 
     public Customer listViewToEntity(CustomerListViewModel c){
