@@ -1,9 +1,6 @@
 package bg.tu_varna.sit.inventorymanagement.presentation.controllers;
 
 import bg.tu_varna.sit.inventorymanagement.business.services.AdminService;
-import bg.tu_varna.sit.inventorymanagement.data.entities.Amortization;
-import bg.tu_varna.sit.inventorymanagement.data.repositories.ProductRepository;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -30,6 +27,23 @@ public class AdminController {
 
     @FXML
     private Button openRegisterProductButton;
+    @FXML
+    private Button boardButton;
+
+    @FXML
+    public void boardRegisterByAdmin(){
+        try {
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BOARD_REGISTER_VIEW));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new CustomerBoardController(stage));
+            Parent root4 = fxmlLoader.load();
+            stage.setScene(new Scene(root4));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
     @FXML
     public void clientRegisterByAdmin(){
         try {
@@ -91,7 +105,5 @@ public class AdminController {
         }
     }
 
-    public void fillComboBoxGrapeType(){
-       // ObservableList<Amortization> amortizationsCat=
-    }
+
 }

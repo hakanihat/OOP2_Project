@@ -68,7 +68,7 @@ public class MolRepository implements  DAORepository<Mol>{
     }
 
     @Override
-    public List<Mol> getById(Long id) {
+    public Mol getById(int id) {
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         List<Mol> mols = new LinkedList<>();
@@ -82,7 +82,7 @@ public class MolRepository implements  DAORepository<Mol>{
             transaction.commit();
             session.close();
         }
-        return mols;
+        return mols.get(0);
     }
 
     @Override

@@ -68,7 +68,7 @@ public class ProductRepository implements DAORepository<Product>{
     }
 
     @Override
-    public List<Product> getById(Long id) {
+    public Product getById(int id) {
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         List<Product> products = new LinkedList<>();
@@ -83,7 +83,7 @@ public class ProductRepository implements DAORepository<Product>{
             session.close();
 
         }
-        return products;
+        return products.get(0);
     }
 
     @Override

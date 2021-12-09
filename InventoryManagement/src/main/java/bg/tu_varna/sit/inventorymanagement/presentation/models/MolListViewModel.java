@@ -1,12 +1,6 @@
 package bg.tu_varna.sit.inventorymanagement.presentation.models;
 
-import bg.tu_varna.sit.inventorymanagement.data.entities.Product;
-
-import javax.persistence.Column;
-import javax.persistence.OneToMany;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 public class MolListViewModel {
     private  String molName;
@@ -14,7 +8,6 @@ public class MolListViewModel {
     private  String email;
     private  String username;
     private  String password;
-    private Set<Product> products = new HashSet<>();
 
     public MolListViewModel(String username, String password) {
         this.username = username;
@@ -69,13 +62,7 @@ public class MolListViewModel {
         this.password = password;
     }
 
-    public Set<Product> getProducts() {
-        return products;
-    }
 
-    public void setProducts(Set<Product> products) {
-        this.products = products;
-    }
 
     @Override
     public boolean equals(Object o) {

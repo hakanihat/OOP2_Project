@@ -1,10 +1,7 @@
 package bg.tu_varna.sit.inventorymanagement.business.services;
 
-import bg.tu_varna.sit.inventorymanagement.data.entities.Amortization;
 import bg.tu_varna.sit.inventorymanagement.data.entities.Mol;
-import bg.tu_varna.sit.inventorymanagement.data.repositories.AdminRepository;
 import bg.tu_varna.sit.inventorymanagement.data.repositories.MolRepository;
-import bg.tu_varna.sit.inventorymanagement.presentation.models.AmortizationListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.MolListViewModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -24,11 +21,21 @@ public class MolService {
     }
 
     public ObservableList<MolListViewModel> getAllMols(){
-        List<Mol> amorts = repositoryMol.getAll();
+        List<Mol> mols = repositoryMol.getAll();
 
         return FXCollections.observableList(
-                amorts.stream().map(m -> new MolListViewModel(m.getUsername(),
+                mols.stream().map(m -> new MolListViewModel(m.getUsername(),
                         m.getTelNum(),m.getEmail(),m.getUsername(),m.getPassword()
                 )).collect(Collectors.toList()));
+    }
+
+    public Mol listViewToEntity(MolListViewModel m){
+        Mol temp = new Mol(m.getMolName(),m.getTelNum(),m.getEmail(),m.getUsername(),m.getPassword());
+        List<Mol> mols = repositoryMol.getAll();
+        for (Mol mol: mols) {
+            if(mol.equals(temp))
+                return mol;
+        }
+        return null;
     }
 }

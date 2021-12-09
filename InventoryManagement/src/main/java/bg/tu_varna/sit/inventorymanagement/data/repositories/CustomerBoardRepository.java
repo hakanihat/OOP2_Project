@@ -68,7 +68,7 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
     }
 
     @Override
-    public List<CustomerBoard> getById(Long id) {
+    public CustomerBoard getById(int id) {
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         List<CustomerBoard> customerBoards = new LinkedList<>();
@@ -83,7 +83,7 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
             session.close();
 
         }
-        return customerBoards;
+        return customerBoards.get(0);
     }
 
     @Override

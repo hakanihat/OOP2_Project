@@ -1,14 +1,10 @@
 package bg.tu_varna.sit.inventorymanagement.presentation.controllers;
 
 
-import bg.tu_varna.sit.inventorymanagement.business.services.AdminService;
 import bg.tu_varna.sit.inventorymanagement.business.services.AmortizationService;
+import bg.tu_varna.sit.inventorymanagement.business.services.ConditionService;
 import bg.tu_varna.sit.inventorymanagement.business.services.MolService;
 import bg.tu_varna.sit.inventorymanagement.business.services.ProductService;
-import bg.tu_varna.sit.inventorymanagement.data.entities.Amortization;
-import bg.tu_varna.sit.inventorymanagement.data.entities.Mol;
-import bg.tu_varna.sit.inventorymanagement.presentation.models.AmortizationListViewModel;
-import bg.tu_varna.sit.inventorymanagement.presentation.models.ConditionListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.MolListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.ProductListViewModel;
 import javafx.collections.FXCollections;
@@ -24,11 +20,14 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
 public class ProductController implements Initializable {
 
     Stage s ;
     private final ProductService productService=ProductService.getInstance();
     private final MolService molService=MolService.getInstance();
+    private final AmortizationService amortizationService=AmortizationService.getInstance();
+    private final ConditionService conditionService=ConditionService.getInstance();
     public ProductController(Stage stage){
         s=stage;
     }
@@ -68,12 +67,13 @@ public class ProductController implements Initializable {
     }
 
     @FXML
-    /*public void registerProductByAdmin()
-    { ProductListViewModel addProd = new ProductListViewModel(prod_description.getText(),prodType.getValue(),prod_value.getText(),date_exp.getValue(),
-            date_discard.getValue(),prod_mol.getValue(),amortizations.getValue());
+    public void registerProductByAdmin()
+    {
+        ProductListViewModel addProd = new ProductListViewModel(prod_description.getText(),prodType.getValue(),date_discard.getValue(),Double.parseDouble(prod_value.getText()) ,date_exp.getValue(),conditionService.getGoodCondition(),
+                molService.listViewToEntity(prod_mol.getValue()),amortizationService.stringToEntity(amortizations.getValue()));
         productService.addTheProduct(addProd);
 
-    }*/ // Registrirai produkta!!!
+    }
 
 
     @Override
@@ -83,4 +83,5 @@ public class ProductController implements Initializable {
         fillMols();
 
     }
+
 }

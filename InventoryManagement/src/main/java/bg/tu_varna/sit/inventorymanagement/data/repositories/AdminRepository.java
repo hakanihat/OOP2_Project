@@ -73,7 +73,7 @@ private static class AdminRepositoryHolder {
     }
 
     @Override
-    public List<Admin> getById(Long id) {
+    public Admin getById(int id) {
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         List<Admin> admins = new LinkedList<>();
@@ -88,7 +88,7 @@ private static class AdminRepositoryHolder {
             session.close();
         }
 
-        return admins;
+        return admins.get(0);
     }
 
     @Override

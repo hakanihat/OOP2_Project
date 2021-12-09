@@ -61,4 +61,5 @@ public class Condition implements Serializable {
                 ", prodCondition='" + prodCondition + '\'' +
                 '}';
     }
+
 }

@@ -1,32 +1,38 @@
 package bg.tu_varna.sit.inventorymanagement.presentation.models;
 
+import bg.tu_varna.sit.inventorymanagement.data.entities.Amortization;
+import bg.tu_varna.sit.inventorymanagement.data.entities.Condition;
 import bg.tu_varna.sit.inventorymanagement.data.entities.Mol;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class ProductListViewModel {
     private  String description;
     private  String prodType;
     private  boolean prodStatus;
-    private Date discardDate;
+    private LocalDate discardDate;
     private double productValue;
-    private Date exploatationStart;
+    private LocalDate exploatationStart;
     private boolean isDiscarded;
     private Mol byMol;
+    private Amortization byAmortization;
+    private Condition byCondition;
 
     public ProductListViewModel() {
     }
 
-    public ProductListViewModel(String description, String prodType, boolean prodStatus, Date discardDate, double productValue,
-                                Date exploatationStart, boolean isDiscarded, Mol byMol) {
+    public ProductListViewModel(String description, String prodType, LocalDate discardDate, double productValue,
+                                LocalDate exploatationStart,Condition byCondition, Mol byMol, Amortization byAmortization) {
         this.description = description;
         this.prodType = prodType;
-        this.prodStatus = prodStatus;
+        this.prodStatus = true;
         this.discardDate = discardDate;
         this.productValue = productValue;
         this.exploatationStart = exploatationStart;
-        this.isDiscarded = isDiscarded;
+        this.isDiscarded = false;
+        this.byCondition= byCondition;
         this.byMol = byMol;
+        this.byAmortization=byAmortization;
     }
 
     public String getDescription() {
@@ -53,11 +59,11 @@ public class ProductListViewModel {
         this.prodStatus = prodStatus;
     }
 
-    public Date getDiscardDate() {
+    public LocalDate getDiscardDate() {
         return discardDate;
     }
 
-    public void setDiscardDate(Date discardDate) {
+    public void setDiscardDate(LocalDate discardDate) {
         this.discardDate = discardDate;
     }
 
@@ -69,11 +75,11 @@ public class ProductListViewModel {
         this.productValue = productValue;
     }
 
-    public Date getExploatationStart() {
+    public LocalDate getExploatationStart() {
         return exploatationStart;
     }
 
-    public void setExploatationStart(Date exploatationStart) {
+    public void setExploatationStart(LocalDate exploatationStart) {
         this.exploatationStart = exploatationStart;
     }
 
@@ -83,6 +89,30 @@ public class ProductListViewModel {
 
     public void setDiscarded(boolean discarded) {
         isDiscarded = discarded;
+    }
+
+    public Mol getByMol() {
+        return byMol;
+    }
+
+    public void setByMol(Mol byMol) {
+        this.byMol = byMol;
+    }
+
+    public Amortization getByAmortization() {
+        return byAmortization;
+    }
+
+    public void setByAmortization(Amortization byAmortization) {
+        this.byAmortization = byAmortization;
+    }
+
+    public Condition getByCondition() {
+        return byCondition;
+    }
+
+    public void setByCondition(Condition byCondition) {
+        this.byCondition = byCondition;
     }
 
     @Override

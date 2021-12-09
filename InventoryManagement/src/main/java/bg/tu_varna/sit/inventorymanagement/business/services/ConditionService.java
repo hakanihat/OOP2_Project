@@ -20,4 +20,9 @@ public class ConditionService {
         Condition condition=new Condition(c.getProdCondition());
         repositoryCondition.save(condition);
     }
+
+    public Condition getGoodCondition(){
+        Condition c= repositoryCondition.getById(1);
+        return c;
+    }
 }

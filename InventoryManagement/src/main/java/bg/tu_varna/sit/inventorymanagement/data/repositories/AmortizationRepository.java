@@ -71,13 +71,13 @@ public class AmortizationRepository implements DAORepository<Amortization> {
     }
 
     @Override
-    public List<Amortization> getById(Long id) {
+    public Amortization getById(int id) {
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
-        List<Amortization> admins = new LinkedList<>();
+        List<Amortization> amort = new LinkedList<>();
         try{
             String jpql = "SELECT a FROM Amortization a WHERE idAmortization ="+id;
-            admins.addAll(session.createQuery(jpql, Amortization.class).getResultList());
+            amort.addAll(session.createQuery(jpql, Amortization.class).getResultList());
             log.info("Successfully got  amortization!");
         }catch (Exception e){
             log.error("Get Amortization error: " +e.getMessage());
@@ -86,7 +86,7 @@ public class AmortizationRepository implements DAORepository<Amortization> {
             session.close();
         }
 
-        return admins;
+        return amort.get(0);
     }
 
     @Override

@@ -73,7 +73,7 @@ public class ConditionRepository implements DAORepository<Condition>{
     }
 
     @Override
-    public List<Condition> getById(Long id) {
+    public Condition getById(int id) {
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         List<Condition> conditions = new LinkedList<>();//Condition
@@ -88,7 +88,7 @@ public class ConditionRepository implements DAORepository<Condition>{
             session.close();
 
         }
-        return conditions;
+        return conditions.get(0);
     }
 
     @Override

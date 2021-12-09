@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name= "mols")
@@ -37,14 +38,12 @@ public class Mol implements Serializable {
 
     public Mol() {}
 
-    public Mol(Long idMol, String molName, String telNum, String email, String username, String password, Set<Product> products) {
-        this.idMol = idMol;
+    public Mol( String molName, String telNum, String email, String username, String password) {
         this.molName = molName;
         this.telNum = telNum;
         this.email = email;
         this.username = username;
         this.password = password;
-        this.products = products;
     }
 
     public Long getPkMol() {
@@ -93,6 +92,19 @@ public class Mol implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mol mol = (Mol) o;
+        return username.equals(mol.username) && password.equals(mol.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, password);
     }
 
     @Override

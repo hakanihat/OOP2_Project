@@ -3,7 +3,7 @@ package bg.tu_varna.sit.inventorymanagement.data.entities;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,13 +28,13 @@ public class Product implements Serializable{
     private  boolean prodStatus;
 
     @Column(name = "discard_date")
-    private Date discardDate;
+    private LocalDate discardDate;
 
     @Column(name = "product_value")
     private double productValue;
 
     @Column(name = "exploatation_start")
-    private Date exploatationStart;
+    private LocalDate exploatationStart;
 
     @Column(name = "is_discarded")
     private boolean isDiscarded;
@@ -56,6 +56,20 @@ public class Product implements Serializable{
     private Set<CustomerBoard> products = new HashSet<>();
 
     public Product() {}
+
+    public Product(String description, String prodType, boolean prodStatus, LocalDate discardDate, double productValue, LocalDate exploatationStart, boolean isDiscarded, Condition byCondition, Mol byMol, Amortization byAmortization) {
+        this.description = description;
+        this.prodType = prodType;
+        this.prodStatus = prodStatus;
+        this.discardDate = discardDate;
+        this.productValue = productValue;
+        this.exploatationStart = exploatationStart;
+        this.isDiscarded = isDiscarded;
+        this.byCondition = byCondition;
+        this.byMol = byMol;
+        this.byAmortization = byAmortization;
+
+    }
 
     public Long getIdInventoryNumber() {
         return idInventoryNumber;
@@ -89,11 +103,11 @@ public class Product implements Serializable{
         this.prodStatus = prodStatus;
     }
 
-    public Date getDiscardDate() {
+    public LocalDate getDiscardDate() {
         return discardDate;
     }
 
-    public void setDiscardDate(Date discardDate) {
+    public void setDiscardDate(LocalDate discardDate) {
         this.discardDate = discardDate;
     }
 
@@ -105,11 +119,11 @@ public class Product implements Serializable{
         this.productValue = productValue;
     }
 
-    public Date getExploatationStart() {
+    public LocalDate getExploatationStart() {
         return exploatationStart;
     }
 
-    public void setExploatationStart(Date exploatationStart) {
+    public void setExploatationStart(LocalDate exploatationStart) {
         this.exploatationStart = exploatationStart;
     }
 
