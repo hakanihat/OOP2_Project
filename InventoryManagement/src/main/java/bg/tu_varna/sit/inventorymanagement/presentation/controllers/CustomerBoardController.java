@@ -39,6 +39,12 @@ public class CustomerBoardController implements Initializable {
     private TableColumn<CustomerBoardListViewModel, Product> productCustomer;
 
     @FXML
+    private TableColumn<CustomerBoardListViewModel, LocalDate> registerProductDate;
+
+    @FXML
+    private TableColumn<CustomerBoardListViewModel, LocalDate> returnProductDate;
+
+    @FXML
     private Button cusButton;
 
     @FXML
@@ -60,6 +66,7 @@ public class CustomerBoardController implements Initializable {
         LocalDate localDate = LocalDate.now();
         CustomerBoardListViewModel addToBoard = new CustomerBoardListViewModel(customerService.listViewToEntity(customersComboBox.getValue()),productService.listViewToEntity(productsComboBox.getValue()),localDate);
         isExist= customerBoardService.addToTheBoard(addToBoard);
+
         if(isExist) {
             Alert alert=new Alert(Alert.AlertType.INFORMATION,"The product has been added successfully!",ButtonType.OK);
             alert.show();
@@ -99,6 +106,8 @@ public class CustomerBoardController implements Initializable {
 
         customerProduct.setCellValueFactory(new PropertyValueFactory<>("byCustomer"));
         productCustomer.setCellValueFactory(new PropertyValueFactory<>("byInventoryNumber"));
+        registerProductDate.setCellValueFactory(new PropertyValueFactory<>("registeredDate"));
+        returnProductDate.setCellValueFactory(new PropertyValueFactory<>("returnDate"));
         temp= customerBoardService.getAllBoards();
         boardTable.setItems(temp);
         fillCustomerId();

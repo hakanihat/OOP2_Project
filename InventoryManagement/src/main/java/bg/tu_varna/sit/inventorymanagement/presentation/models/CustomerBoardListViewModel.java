@@ -4,6 +4,7 @@ import bg.tu_varna.sit.inventorymanagement.data.entities.Customer;
 import bg.tu_varna.sit.inventorymanagement.data.entities.Product;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class CustomerBoardListViewModel {
     private Customer byCustomer;
@@ -25,6 +26,7 @@ public class CustomerBoardListViewModel {
         this.byCustomer = byCustomer;
         this.byInventoryNumber = byInventoryNumber;
         this.registeredDate = registeredDate;
+        this.returnDate=null;
     }
 
     public CustomerBoardListViewModel(Customer byCustomer) {
@@ -73,5 +75,18 @@ public class CustomerBoardListViewModel {
         return "CustomerBoardListViewModel{" +
                 "byCustomer=" + byCustomer +
                 ", byInventoryNumber=" + byInventoryNumber ;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomerBoardListViewModel that = (CustomerBoardListViewModel) o;
+        return Objects.equals(byCustomer, that.byCustomer) && Objects.equals(byInventoryNumber, that.byInventoryNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(byCustomer, byInventoryNumber);
     }
 }

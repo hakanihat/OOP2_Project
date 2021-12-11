@@ -43,10 +43,10 @@ public class CustomerController {
         else {
             isExist = cusService.addTheCustomer(addCus);
             if (isExist) {
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "The product has been added successfully!", ButtonType.OK);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "The customer has been registered successfully!", ButtonType.OK);
                 alert.show();
             } else {
-                Alert alert = new Alert(Alert.AlertType.ERROR, "The product has been already added to customer's board!", ButtonType.OK);
+                Alert alert = new Alert(Alert.AlertType.ERROR, "The customer has been already added to customer's board!", ButtonType.OK);
                 alert.show();
             }
         }

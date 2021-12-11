@@ -37,6 +37,17 @@ public class ProductService {
         return null;
     }
 
+    public Product getProductById(int n)
+    {
+        Product product = repositoryProduct.getById(n);
+        return product;
+    }
+
+    public void changeStatus(Product p){
+        p.setProdStatus(false);
+        repositoryProduct.update(p);
+    }
+
 
     public ObservableList<ProductListViewModel> getAllProducts() {
         List<Product> products = repositoryProduct.getAll();

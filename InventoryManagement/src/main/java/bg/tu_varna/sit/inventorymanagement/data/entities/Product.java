@@ -17,7 +17,7 @@ public class Product implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name = "id_inventory_number",nullable = false)
-    private  Long idInventoryNumber;
+    private  int idInventoryNumber;
 
     @Column(name = "description")
     private  String description;
@@ -58,7 +58,7 @@ public class Product implements Serializable{
 
     public Product() {}
 
-    public Product(Long idInventoryNumber, String description) {
+    public Product(int idInventoryNumber, String description) {
         this.idInventoryNumber = idInventoryNumber;
         this.description = description;
     }
@@ -89,11 +89,11 @@ public class Product implements Serializable{
         this.byMol = byMol;
 
     }
-    public Long getIdInventoryNumber() {
+    public int getIdInventoryNumber() {
         return idInventoryNumber;
     }
 
-    public void setIdInventoryNumber(Long idInventoryNumber) {
+    public void setIdInventoryNumber(int idInventoryNumber) {
         this.idInventoryNumber = idInventoryNumber;
     }
 

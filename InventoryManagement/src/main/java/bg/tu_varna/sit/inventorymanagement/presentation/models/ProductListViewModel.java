@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class ProductListViewModel {
-    private  Long idInventoryNumber;
+    private  int idInventoryNumber;
     private  String description;
     private  String prodType;
     private  boolean prodStatus;
@@ -51,16 +51,16 @@ public class ProductListViewModel {
 
     }
 
-    public ProductListViewModel(Long idInventoryNumber, String description) {
+    public ProductListViewModel(int idInventoryNumber, String description) {
         this.idInventoryNumber = idInventoryNumber;
         this.description = description;
     }
 
-    public Long getIdInventoryNumber() {
+    public int getIdInventoryNumber() {
         return idInventoryNumber;
     }
 
-    public void setIdInventoryNumber(Long idInventoryNumber) {
+    public void setIdInventoryNumber(int idInventoryNumber) {
         this.idInventoryNumber = idInventoryNumber;
     }
 
