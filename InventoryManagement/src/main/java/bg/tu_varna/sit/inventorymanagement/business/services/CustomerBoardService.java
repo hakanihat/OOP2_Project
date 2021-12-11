@@ -26,24 +26,20 @@ public class CustomerBoardService {
     }
 
 
-    public boolean addToTheBoard(CustomerBoardListViewModel cb) {
-        List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
+    public int addToTheBoard(CustomerBoardListViewModel cb) {
+       // List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
         CustomerBoard customerBoard=new CustomerBoard(cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate(),cb.getReturnDate());
         int num;
-        Product prod=new Product();
-        for(CustomerBoard board: customerBoards ){
-            if(board.equals(customerBoard))
-            { num=board.getByInventoryNumber().getIdInventoryNumber();
+        Product prod;
+            num=customerBoard.getByInventoryNumber().getIdInventoryNumber();
             prod=productService.getProductById(num);
             if( prod.isProdStatus()==false)
-            { return false;}
-            break;
-            }
-        }
-
-        productService.changeStatus(prod);
+            return 0;
+            if( prod.isDiscarded()==true)
+                return 1;
         repositoryCustomerBoard.save(customerBoard);
-        return true;
+        productService.changeStatus(prod);
+        return 2;
     }
 
 

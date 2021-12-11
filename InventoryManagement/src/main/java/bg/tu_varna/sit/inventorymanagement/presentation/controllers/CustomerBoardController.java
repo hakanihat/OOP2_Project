@@ -57,7 +57,7 @@ public class CustomerBoardController implements Initializable {
     private ComboBox<ProductListViewModel> productsComboBox;
 
     ObservableList<CustomerBoardListViewModel> temp;
-    boolean isExist;
+    int isExist;
 
     @FXML
     private void boardRegistration(){
@@ -67,13 +67,18 @@ public class CustomerBoardController implements Initializable {
         CustomerBoardListViewModel addToBoard = new CustomerBoardListViewModel(customerService.listViewToEntity(customersComboBox.getValue()),productService.listViewToEntity(productsComboBox.getValue()),localDate);
         isExist= customerBoardService.addToTheBoard(addToBoard);
 
-        if(isExist) {
-            Alert alert=new Alert(Alert.AlertType.INFORMATION,"The product has been added successfully!",ButtonType.OK);
+        if(isExist==0) {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"The product is not available!",ButtonType.OK);
+            alert.show();
+        }
+        else if(isExist==1)
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"The product is discarded!",ButtonType.OK);
             alert.show();
         }
         else
         {
-            Alert alert=new Alert(Alert.AlertType.ERROR,"The product has been already added to customer's board!",ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"The product has been added successfully!",ButtonType.OK);
             alert.show();
         }
         temp = customerBoardService.getAllBoards();
@@ -82,6 +87,16 @@ public class CustomerBoardController implements Initializable {
 
     @FXML
     private void boardRemove(){
+        temp.clear();
+        boardTable.setItems(temp);
+        boardTable.getSelectionModel().getSelectedItem()             // removeAll(boardTable.getSelectionModel().getSelectedItem());
+
+
+
+
+
+        temp = customerBoardService.getAllBoards();
+        boardTable.setItems(temp);
 
     }
 
