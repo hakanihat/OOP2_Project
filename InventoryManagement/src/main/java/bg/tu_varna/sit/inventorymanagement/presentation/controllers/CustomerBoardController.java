@@ -9,6 +9,7 @@ import bg.tu_varna.sit.inventorymanagement.presentation.models.CustomerBoardList
 import bg.tu_varna.sit.inventorymanagement.presentation.models.CustomerListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.ProductListViewModel;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -57,6 +58,7 @@ public class CustomerBoardController implements Initializable {
     private ComboBox<ProductListViewModel> productsComboBox;
 
     ObservableList<CustomerBoardListViewModel> temp;
+    CustomerBoardListViewModel forRemove;
     int isExist;
 
     @FXML
@@ -86,14 +88,19 @@ public class CustomerBoardController implements Initializable {
     }
 
     @FXML
-    private void boardRemove(){
+    public void getTheRow(){
+        forRemove = boardTable.getSelectionModel().getSelectedItem();
+    }
+
+
+    @FXML
+    private void boardRemove(ActionEvent event){
+        LocalDate localDate2 = LocalDate.now();
+        forRemove.setReturnDate(localDate2);
         temp.clear();
-        boardTable.setItems(temp);
-        boardTable.getSelectionModel().getSelectedItem()             // removeAll(boardTable.getSelectionModel().getSelectedItem());
+        //boardTable.setItems(temp);
 
-
-
-
+        customerBoardService.returnTheProduct(forRemove);
 
         temp = customerBoardService.getAllBoards();
         boardTable.setItems(temp);

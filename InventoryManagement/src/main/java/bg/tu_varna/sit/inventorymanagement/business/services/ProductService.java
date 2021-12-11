@@ -44,7 +44,10 @@ public class ProductService {
     }
 
     public void changeStatus(Product p){
-        p.setProdStatus(false);
+        if(p.isProdStatus()==true)
+            p.setProdStatus(false);
+        else
+            p.setProdStatus(true);
         repositoryProduct.update(p);
     }
 

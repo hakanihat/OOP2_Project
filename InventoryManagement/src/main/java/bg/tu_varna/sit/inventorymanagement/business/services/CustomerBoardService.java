@@ -20,6 +20,20 @@ public class CustomerBoardService {
         return CustomerBoardService.CustomerBoardServiceHolder.INSTANCE;
     }
 
+    public void returnTheProduct(CustomerBoardListViewModel cb) {
+        CustomerBoard customerBoard=new CustomerBoard(cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate(),cb.getReturnDate());
+        List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
+        for(CustomerBoard cusBoard: customerBoards)
+        {
+            if(cusBoard.equals(customerBoard))
+            {customerBoard.setPkCustomerBoard(cusBoard.getPkCustomerBoard());
+                repositoryCustomerBoard.update(customerBoard);
+            Product p=customerBoard.getByInventoryNumber();
+            productService.changeStatus(p);
+            break;}
+        }
+    }
+
 
     private static class CustomerBoardServiceHolder {
         public static final CustomerBoardService INSTANCE = new CustomerBoardService();

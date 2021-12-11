@@ -92,12 +92,12 @@ public class CustomerBoard  implements  Serializable{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CustomerBoard board = (CustomerBoard) o;
-        return Objects.equals(byCustomer, board.byCustomer) && Objects.equals(byInventoryNumber, board.byInventoryNumber);
+        return Objects.equals(byCustomer, board.byCustomer) && Objects.equals(byInventoryNumber, board.byInventoryNumber) && Objects.equals(registeredDate, board.registeredDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(byCustomer, byInventoryNumber);
+        return Objects.hash(byCustomer, byInventoryNumber, registeredDate);
     }
 
     @Override
