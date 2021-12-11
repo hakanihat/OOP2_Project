@@ -21,7 +21,7 @@ public class CustomerBoardService {
     }
 
     public void returnTheProduct(CustomerBoardListViewModel cb) {
-        CustomerBoard customerBoard=new CustomerBoard(cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate(),cb.getReturnDate());
+        CustomerBoard customerBoard=new CustomerBoard(cb.getIdCustomerBoard(),  cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate(),cb.getReturnDate());
         List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
         for(CustomerBoard cusBoard: customerBoards)
         {

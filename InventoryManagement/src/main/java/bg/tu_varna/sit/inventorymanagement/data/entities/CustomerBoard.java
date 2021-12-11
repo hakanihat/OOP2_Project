@@ -15,7 +15,7 @@ public class CustomerBoard  implements  Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_customer_board",nullable = false)
-    private  Long idCustomerBoard;
+    private  int idCustomerBoard;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_customer")
@@ -33,7 +33,15 @@ public class CustomerBoard  implements  Serializable{
 
     public CustomerBoard() {}
 
-    public CustomerBoard( Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
+    public CustomerBoard(Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
+        this.byCustomer = byCustomer;
+        this.byInventoryNumber = byInventoryNumber;
+        this.registeredDate = registeredDate;
+        this.returnDate = returnDate;
+    }
+
+    public CustomerBoard(int idCustomerBoard, Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
+        this.idCustomerBoard=idCustomerBoard;
         this.byCustomer = byCustomer;
         this.byInventoryNumber = byInventoryNumber;
         this.registeredDate = registeredDate;
@@ -46,12 +54,19 @@ public class CustomerBoard  implements  Serializable{
         this.registeredDate = registeredDate;
     }
 
-
-    public Long getPkCustomerBoard() {
+    public int getIdCustomerBoard() {
         return idCustomerBoard;
     }
 
-    public void setPkCustomerBoard(Long pkCustomerBoard) {
+    public void setIdCustomerBoard(int idCustomerBoard) {
+        this.idCustomerBoard = idCustomerBoard;
+    }
+
+    public int getPkCustomerBoard() {
+        return idCustomerBoard;
+    }
+
+    public void setPkCustomerBoard(int pkCustomerBoard) {
         this.idCustomerBoard = pkCustomerBoard;
     }
 
@@ -92,12 +107,12 @@ public class CustomerBoard  implements  Serializable{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CustomerBoard board = (CustomerBoard) o;
-        return Objects.equals(byCustomer, board.byCustomer) && Objects.equals(byInventoryNumber, board.byInventoryNumber) && Objects.equals(registeredDate, board.registeredDate);
+        return Objects.equals(byCustomer, board.byCustomer) && Objects.equals(byInventoryNumber, board.byInventoryNumber);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(byCustomer, byInventoryNumber, registeredDate);
+        return Objects.hash(byCustomer, byInventoryNumber);
     }
 
     @Override

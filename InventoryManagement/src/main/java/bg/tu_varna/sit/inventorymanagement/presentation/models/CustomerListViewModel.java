@@ -4,7 +4,7 @@ package bg.tu_varna.sit.inventorymanagement.presentation.models;
 import java.util.Objects;
 
 public class CustomerListViewModel {
-    private  Long idCustomer;
+    private  int idCustomer;
     private  String cusName;
     private  String telNum;
     private  String email;
@@ -12,7 +12,7 @@ public class CustomerListViewModel {
     public CustomerListViewModel() {
     }
 
-    public CustomerListViewModel(Long idCustomer, String cusName, String telNum, String email) {
+    public CustomerListViewModel(int idCustomer, String cusName, String telNum, String email) {
         this.idCustomer=idCustomer;
         this.cusName=cusName;
         this.telNum=telNum;
@@ -23,6 +23,14 @@ public class CustomerListViewModel {
         this.cusName = cusName;
         this.telNum = telNum;
         this.email = email;
+    }
+
+    public int getIdCustomer() {
+        return idCustomer;
+    }
+
+    public void setIdCustomer(int idCustomer) {
+        this.idCustomer = idCustomer;
     }
 
     public String getCusName() {

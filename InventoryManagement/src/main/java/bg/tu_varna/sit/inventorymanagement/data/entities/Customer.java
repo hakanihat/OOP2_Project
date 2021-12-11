@@ -17,7 +17,7 @@ public class Customer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_customer",nullable = false)
-    private  Long idCustomer;
+    private  int idCustomer;
 
     @Column(name = "cus_name")
     private  String cusName;
@@ -55,11 +55,11 @@ public class Customer implements Serializable {
         this.customers = customers;
     }
 
-    public Long getPkCustomer() {
+    public int getPkCustomer() {
         return idCustomer;
     }
 
-    public void setPkCustomer(Long pkCustomer) {
+    public void setPkCustomer(int pkCustomer) {
         this.idCustomer = pkCustomer;
     }
 

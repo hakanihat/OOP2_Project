@@ -7,12 +7,21 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class CustomerBoardListViewModel {
+    private  int idCustomerBoard;
     private Customer byCustomer;
     private Product byInventoryNumber;
     private LocalDate registeredDate;
     private LocalDate returnDate;
 
     public CustomerBoardListViewModel() {
+    }
+
+    public CustomerBoardListViewModel(int idCustomerBoard, Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
+        this.idCustomerBoard = idCustomerBoard;
+        this.byCustomer = byCustomer;
+        this.byInventoryNumber = byInventoryNumber;
+        this.registeredDate = registeredDate;
+        this.returnDate = returnDate;
     }
 
     public CustomerBoardListViewModel(Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
@@ -36,6 +45,14 @@ public class CustomerBoardListViewModel {
     public CustomerBoardListViewModel(Customer byCustomer, Product byInventoryNumber) {
         this.byCustomer = byCustomer;
         this.byInventoryNumber = byInventoryNumber;
+    }
+
+    public int getIdCustomerBoard() {
+        return idCustomerBoard;
+    }
+
+    public void setIdCustomerBoard(int idCustomerBoard) {
+        this.idCustomerBoard = idCustomerBoard;
     }
 
     public Customer getByCustomer() {
