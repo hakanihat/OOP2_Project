@@ -36,6 +36,12 @@ public class AdminController {
     @FXML
     private Button allProductQueryButton;
 
+    @FXML
+    private Button getByStatusButton;
+
+    @FXML
+    private Button getByTypeButton;
+
 
 
     @FXML
@@ -88,6 +94,36 @@ public class AdminController {
     }
 
 
+
+    @FXML
+    public void getAllProductQueryByStatus(){
+        try {
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(STATUS_QUERY_VIEW));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new ProductByStatusQueryController(stage));
+            Parent root3 = fxmlLoader.load();
+            stage.setScene(new Scene(root3));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void getAllProductQueryByType(){
+        try {
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(TYPE_QUERY_VIEW));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new ProductByTypeQueryController(stage));
+            Parent root3 = fxmlLoader.load();
+            stage.setScene(new Scene(root3));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     public void clientRegisterByAdmin(){
