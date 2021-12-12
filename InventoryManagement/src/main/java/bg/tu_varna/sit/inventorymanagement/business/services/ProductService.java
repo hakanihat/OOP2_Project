@@ -62,6 +62,36 @@ public class ProductService {
                 )).collect(Collectors.toList()));
     }
 
+    public ObservableList<ProductListViewModel> getAllProductsByStatInPeriod(LocalDate myFromDate, LocalDate myToDate, boolean isAvailable) {
+        List<Product> products = repositoryProduct.getAll();
+        List<Product> productsInPeriod = new ArrayList<>();
+
+        if(isAvailable)
+        {for(Product p: products)
+        {
+            if(p.getExploatationStart().isAfter(myFromDate) && p.getExploatationStart().isBefore(myToDate) && (!p.isDiscarded()) && p.isProdStatus())
+            {
+                productsInPeriod.add(p);
+            }
+        }
+        }
+        else
+        {for(Product p: products)
+        {
+            if (p.getExploatationStart().isAfter(myFromDate) && p.getExploatationStart().isBefore(myToDate) && (!p.isDiscarded()) && (!p.isProdStatus()))
+            {
+                productsInPeriod.add(p);
+            }
+        }
+        }
+
+        return FXCollections.observableList(
+                productsInPeriod.stream().map(p -> new ProductListViewModel(
+                        p.getIdInventoryNumber(),p.getDescription(),p.getProdType(),p.isProdStatus(),p.getExploatationStart(),p.getProductValue(),p.getByMol(),p.getByAmortization(),p.getDiscardDate()
+                )).collect(Collectors.toList()));
+
+    }
+
     private static class ProductServiceHolder {
         public static final ProductService INSTANCE = new ProductService();
     }

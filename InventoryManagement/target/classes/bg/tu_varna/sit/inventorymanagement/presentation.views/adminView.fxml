@@ -78,7 +78,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="getByTypeButton" layoutX="343.0" layoutY="42.0" mnemonicParsing="false" onAction="#getAllProductQueryByType" prefHeight="98.0" prefWidth="130.0" style="-fx-background-color: #F8F8FF;" text="Списък &#10;по категории " textAlignment="CENTER">
+            <Button fx:id="getByTypeButton" layoutX="343.0" layoutY="42.0" mnemonicParsing="false" onAction="#getAllProductQueryByType" prefHeight="98.0" prefWidth="130.0" style="-fx-background-color: #F8F8FF;" text="Списък по&#10;категории " textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>

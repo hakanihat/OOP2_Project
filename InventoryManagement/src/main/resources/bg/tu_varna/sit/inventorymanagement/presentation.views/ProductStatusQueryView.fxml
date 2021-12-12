@@ -45,7 +45,7 @@
     <center>
         <ScrollPane prefHeight="757.0" prefWidth="1102.0" BorderPane.alignment="CENTER">
             <content>
-                <TableView fx:id="allProdByTypeTable" prefHeight="756.0" prefWidth="1055.0" style="-fx-background-color: #F5EEF8;">
+                <TableView fx:id="allProdByStatTable" prefHeight="756.0" prefWidth="1055.0" style="-fx-background-color: #F5EEF8;">
                     <columns>
                         <TableColumn fx:id="inventoryCol" prefWidth="112.0" text="Inventory number" />
                         <TableColumn fx:id="descriptionCol" prefWidth="172.0" text="Description" />
