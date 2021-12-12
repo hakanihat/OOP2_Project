@@ -109,13 +109,6 @@ public class Mol implements Serializable {
 
     @Override
     public String toString() {
-        return "Mol{" +
-                "pkMol=" + idMol +
-                ", molName='" + molName + '\'' +
-                ", telNum='" + telNum + '\'' +
-                ", email='" + email + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return idMol+"-"+ molName;
     }
 }

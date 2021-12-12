@@ -48,7 +48,7 @@ public class Product implements Serializable{
     @JoinColumn(name = "id_amortization", referencedColumnName = "id_amortization")
     private Amortization byAmortization;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_mol")
     private Mol byMol;
 

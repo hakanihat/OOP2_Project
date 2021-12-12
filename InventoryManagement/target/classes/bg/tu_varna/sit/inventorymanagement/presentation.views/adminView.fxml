@@ -73,7 +73,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="190.0" layoutY="42.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="130.0" style="-fx-background-color: #F8F8FF;" text="Пълен списък&#10;на продуктите" textAlignment="CENTER">
+            <Button fx:id="allProductQueryButton" layoutX="190.0" layoutY="42.0" mnemonicParsing="false" onAction="#getAllProductQuery" prefHeight="98.0" prefWidth="130.0" style="-fx-background-color: #F8F8FF;" text="Пълен списък&#10;на продуктите" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

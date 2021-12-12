@@ -11,6 +11,7 @@ public class Constants {
         public static final String PRODUCT_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml";
         public static final String BOARD_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml";//
         public static final String BOARD_QUERY_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/customerQueryView.fxml";
+        public static final String PRODUCT_QUERY_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/productQueryView.fxml";
     }
 
     public static class Configurations {

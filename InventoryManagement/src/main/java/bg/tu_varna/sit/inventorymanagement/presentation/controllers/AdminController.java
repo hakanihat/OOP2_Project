@@ -33,6 +33,9 @@ public class AdminController {
     @FXML
     private Button cusProdsQuery;
 
+    @FXML
+    private Button allProductQueryButton;
+
 
 
     @FXML
@@ -42,6 +45,21 @@ public class AdminController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BOARD_QUERY_VIEW));
             Stage stage = new Stage();
             fxmlLoader.setController(new CustomerProdsController(stage));
+            Parent root4 = fxmlLoader.load();
+            stage.setScene(new Scene(root4));
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void getAllProductQuery(){
+        try {
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PRODUCT_QUERY_VIEW));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new ProductsQueryController(stage));
             Parent root4 = fxmlLoader.load();
             stage.setScene(new Scene(root4));
             stage.show();

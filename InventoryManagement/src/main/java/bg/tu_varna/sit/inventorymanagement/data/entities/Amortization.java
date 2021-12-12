@@ -3,8 +3,6 @@ package bg.tu_varna.sit.inventorymanagement.data.entities;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 @Table(name= "amortization")
 @Entity
 public class Amortization implements Serializable {
@@ -52,5 +50,10 @@ public class Amortization implements Serializable {
 
     public void setProduct(Product product) {
         this.product = product;
+    }
+
+    @Override
+    public String toString() {
+        return  " "+idAmortization;
     }
 }
