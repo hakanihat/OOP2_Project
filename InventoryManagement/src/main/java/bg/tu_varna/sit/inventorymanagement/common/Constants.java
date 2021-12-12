@@ -10,7 +10,7 @@ public class Constants {
         public static final String CONDITION_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/addConditionView.fxml";
         public static final String PRODUCT_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml";
         public static final String BOARD_REGISTER_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml";//
-       // public static final String BOARD_REMOVE_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml";
+        public static final String BOARD_QUERY_VIEW = "/bg/tu_varna/sit/inventorymanagement/presentation.views/customerQueryView.fxml";
     }
 
     public static class Configurations {

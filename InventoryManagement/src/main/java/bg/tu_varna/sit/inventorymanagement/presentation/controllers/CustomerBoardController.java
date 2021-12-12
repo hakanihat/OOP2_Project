@@ -80,7 +80,7 @@ public class CustomerBoardController implements Initializable {
         }
         else
         {
-            Alert alert=new Alert(Alert.AlertType.ERROR,"The product has been added successfully!",ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.INFORMATION,"The product has been added successfully!",ButtonType.OK);
             alert.show();
         }
         temp = customerBoardService.getAllBoards();

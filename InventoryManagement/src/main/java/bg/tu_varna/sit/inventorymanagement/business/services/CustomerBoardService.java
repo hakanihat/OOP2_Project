@@ -7,6 +7,8 @@ import bg.tu_varna.sit.inventorymanagement.presentation.models.CustomerBoardList
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,6 +20,10 @@ public class CustomerBoardService {
 
     public static CustomerBoardService getInstance(){
         return CustomerBoardService.CustomerBoardServiceHolder.INSTANCE;
+    }
+
+    private static class CustomerBoardServiceHolder {
+        public static final CustomerBoardService INSTANCE = new CustomerBoardService();
     }
 
     public void returnTheProduct(CustomerBoardListViewModel cb) {
@@ -34,10 +40,23 @@ public class CustomerBoardService {
         }
     }
 
-
-    private static class CustomerBoardServiceHolder {
-        public static final CustomerBoardService INSTANCE = new CustomerBoardService();
+    public ObservableList<CustomerBoardListViewModel> getProductsInPeriod(LocalDate myFromDate, LocalDate myToDate) {
+        List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
+        List<CustomerBoard> boardInPeriod = new ArrayList<>();
+        for(CustomerBoard cb: customerBoards){
+            if(cb.getRegisteredDate().isAfter(myFromDate) && cb.getRegisteredDate().isBefore(myToDate) )
+            {
+                boardInPeriod.add(cb);
+            }
+        }
+        return FXCollections.observableList(
+                boardInPeriod.stream().map(cb -> new CustomerBoardListViewModel(
+                        cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate(),cb.getReturnDate()
+                )).collect(Collectors.toList()));
     }
+
+
+
 
 
     public int addToTheBoard(CustomerBoardListViewModel cb) {

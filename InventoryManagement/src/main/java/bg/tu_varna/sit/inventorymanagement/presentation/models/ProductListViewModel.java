@@ -51,6 +51,18 @@ public class ProductListViewModel {
 
     }
 
+    public ProductListViewModel(int idInventoryNumber, String description, String prodType, boolean prodStatus, LocalDate exploatationStart , double productValue, Mol byMol, Amortization byAmortization, LocalDate discardDate ) {
+        this.idInventoryNumber = idInventoryNumber;
+        this.description = description;
+        this.prodType = prodType;
+        this.prodStatus = prodStatus;
+        this.discardDate = discardDate;
+        this.productValue = productValue;
+        this.exploatationStart = exploatationStart;
+        this.byMol = byMol;
+        this.byAmortization = byAmortization;
+    }
+
     public ProductListViewModel(int idInventoryNumber, String description) {
         this.idInventoryNumber = idInventoryNumber;
         this.description = description;
@@ -159,6 +171,6 @@ public class ProductListViewModel {
 
     @Override
     public String toString() {
-        return description ;
+        return idInventoryNumber+"-" + description ;
     }
 }

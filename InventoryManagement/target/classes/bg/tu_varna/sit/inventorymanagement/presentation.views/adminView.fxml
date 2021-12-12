@@ -68,7 +68,7 @@
       </AnchorPane>
       <AnchorPane layoutY="344.0" prefHeight="155.0" prefWidth="817.0" style="-fx-background-color: #6F6CB5;">
          <children>
-            <Button layoutX="34.0" layoutY="42.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="130.0" style="-fx-background-color: #F8F8FF;" text="Клиенти с&#10;регистрираните&#10;на тяхно име &#10;продукти">
+            <Button fx:id="cusProdsQuery" layoutX="34.0" layoutY="42.0" mnemonicParsing="false" onAction="#cusProdsQueryOpen" prefHeight="98.0" prefWidth="130.0" style="-fx-background-color: #F8F8FF;" text="Клиенти с&#10;регистрираните&#10;на тяхно име &#10;продукти">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

@@ -3,13 +3,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="526.0" prefWidth="600.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.inventorymanagement.presentation.views.CustomerRegisterView">
+<AnchorPane prefHeight="794.0" prefWidth="712.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Button fx:id="cusButton" layoutX="463.0" layoutY="23.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Справка">
+        <Button fx:id="getCusProd" layoutX="463.0" layoutY="23.0" mnemonicParsing="false" onAction="#getCusProdOpen" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Справка">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
@@ -24,8 +25,15 @@
                 <Font name="System Bold Italic" size="12.0" />
             </font>
         </Label>
-      <DatePicker layoutX="35.0" layoutY="34.0" />
-      <DatePicker layoutX="248.0" layoutY="34.0" />
-      <ListView layoutX="23.0" layoutY="85.0" prefHeight="425.0" prefWidth="552.0" />
+      <DatePicker fx:id="fromDate" layoutX="35.0" layoutY="34.0" onAction="#getFromDate" />
+      <DatePicker fx:id="toDate" layoutX="248.0" layoutY="34.0" onAction="#getToDate" />
+      <TableView fx:id="cusProdTable" layoutX="24.0" layoutY="85.0" prefHeight="684.0" prefWidth="663.0">
+        <columns>
+          <TableColumn fx:id="customerProduct" prefWidth="145.0" text="Customer" />
+          <TableColumn fx:id="productCustomer" prefWidth="156.0" text="Product" />
+            <TableColumn fx:id="registerProductDate" prefWidth="179.0" text="Registration date" />
+            <TableColumn fx:id="returnProductDate" prefWidth="181.0" text="Return date" />
+        </columns>
+      </TableView>
     </children>
 </AnchorPane>

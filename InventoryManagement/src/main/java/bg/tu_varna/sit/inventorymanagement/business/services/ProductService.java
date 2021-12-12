@@ -6,6 +6,8 @@ import bg.tu_varna.sit.inventorymanagement.presentation.models.ProductListViewMo
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,6 +16,21 @@ public class ProductService {
 
     public static ProductService getInstance(){
         return ProductService.ProductServiceHolder.INSTANCE;
+    }
+
+    public ObservableList<ProductListViewModel> getAllProductsInPeriod(LocalDate myFromDate, LocalDate myToDate) {
+        List<Product> products = repositoryProduct.getAll();
+        List<Product> productsInPeriod = new ArrayList<>();
+        for(Product p: products){
+            if(p.getExploatationStart().isAfter(myFromDate) && p.getExploatationStart().isBefore(myToDate) && (!p.isDiscarded()) )
+            {
+                productsInPeriod.add(p);
+            }
+        }
+        return FXCollections.observableList(
+                productsInPeriod.stream().map(p -> new ProductListViewModel(
+                        p.getIdInventoryNumber(),p.getDescription(),p.getProdType(),p.isProdStatus(),p.getExploatationStart(),p.getProductValue(),p.getByMol(),p.getByAmortization(),p.getDiscardDate()
+                )).collect(Collectors.toList()));
     }
 
     private static class ProductServiceHolder {

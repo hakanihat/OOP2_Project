@@ -32,7 +32,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Label>
-      <TableView fx:id="boardTable" layoutX="281.0" layoutY="32.0" onMouseClicked="#getTheRow" prefHeight="478.0" prefWidth="630.0">
+      <TableView fx:id="boardTable" layoutX="276.0" layoutY="32.0" onMouseClicked="#getTheRow" prefHeight="478.0" prefWidth="630.0">
         <columns>
           <TableColumn fx:id="customerProduct" prefWidth="163.0" text="Customer" />
           <TableColumn fx:id="productCustomer" prefWidth="157.0" text="Product" />
