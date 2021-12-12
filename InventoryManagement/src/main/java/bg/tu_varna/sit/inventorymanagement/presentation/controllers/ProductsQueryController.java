@@ -7,6 +7,7 @@ import bg.tu_varna.sit.inventorymanagement.presentation.models.ProductListViewMo
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -98,5 +99,7 @@ public class ProductsQueryController implements Initializable {
         molCol.setCellValueFactory(new PropertyValueFactory<>("byMol"));
         amortCol.setCellValueFactory(new PropertyValueFactory<>("byAmortization"));
         disCol.setCellValueFactory(new PropertyValueFactory<>("discardDate"));
+        allProdTable.getStyleClass().add("bg-1");
+        allProdTable.setPadding(new Insets(5));
     }
 }

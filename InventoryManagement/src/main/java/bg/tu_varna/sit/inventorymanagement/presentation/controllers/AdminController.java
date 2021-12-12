@@ -59,9 +59,13 @@ public class AdminController {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PRODUCT_QUERY_VIEW));
             Stage stage = new Stage();
+
             fxmlLoader.setController(new ProductsQueryController(stage));
             Parent root4 = fxmlLoader.load();
             stage.setScene(new Scene(root4));
+            stage.setResizable(true);
+
+
             stage.show();
         } catch(Exception e) {
             e.printStackTrace();
