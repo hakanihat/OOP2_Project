@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment=" Справките са готови. За утре остават връщане в начална страница и тестове">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="тестове..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -435,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639345442980</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="тестове...">
+      <created>1639516452232</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1639516452232</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +468,8 @@
     <MESSAGE value="За утре остават: Справки и Тестове,ако имам време" />
     <MESSAGE value=" Справки ..." />
     <MESSAGE value=" Справките са готови. За утре остават връщане в начална страница и тестове" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Справките са готови. За утре остават връщане в начална страница и тестове" />
+    <MESSAGE value="тестове..." />
+    <option name="LAST_COMMIT_MESSAGE" value="тестове..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
