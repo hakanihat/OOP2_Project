@@ -10,24 +10,24 @@
 
 <AnchorPane prefHeight="794.0" prefWidth="712.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Button fx:id="getCusProd" layoutX="463.0" layoutY="23.0" mnemonicParsing="false" onAction="#getCusProdOpen" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Справка">
+        <Button fx:id="getCusProd" layoutX="590.0" layoutY="72.0" mnemonicParsing="false" onAction="#getCusProdOpen" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Справка">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <Label layoutX="14.0" layoutY="38.0" prefHeight="18.0" prefWidth="19.0" text="ОТ">
+        <Label layoutX="150.0" layoutY="100.0" prefHeight="18.0" prefWidth="19.0" text="ОТ">
             <font>
                 <Font name="System Bold Italic" size="12.0" />
             </font>
         </Label>
-        <Label layoutX="222.0" layoutY="38.0" prefHeight="18.0" prefWidth="19.0" text="ДО">
+        <Label layoutX="372.0" layoutY="100.0" prefHeight="18.0" prefWidth="19.0" text="ДО">
             <font>
                 <Font name="System Bold Italic" size="12.0" />
             </font>
         </Label>
-      <DatePicker fx:id="fromDate" layoutX="35.0" layoutY="34.0" onAction="#getFromDate" />
-      <DatePicker fx:id="toDate" layoutX="248.0" layoutY="34.0" onAction="#getToDate" />
-      <TableView fx:id="cusProdTable" layoutX="24.0" layoutY="85.0" prefHeight="684.0" prefWidth="663.0">
+      <DatePicker fx:id="fromDate" layoutX="182.0" layoutY="96.0" onAction="#getFromDate" />
+      <DatePicker fx:id="toDate" layoutX="398.0" layoutY="96.0" onAction="#getToDate" />
+      <TableView fx:id="cusProdTable" layoutX="24.0" layoutY="131.0" prefHeight="638.0" prefWidth="663.0">
         <columns>
           <TableColumn fx:id="customerProduct" prefWidth="145.0" text="Customer" />
           <TableColumn fx:id="productCustomer" prefWidth="156.0" text="Product" />
@@ -35,5 +35,10 @@
             <TableColumn fx:id="returnProductDate" prefWidth="181.0" text="Return date" />
         </columns>
       </TableView>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Назад">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

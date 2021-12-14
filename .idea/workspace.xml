@@ -5,7 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment=" Справките са готови. За утре остават връщане в начална страница и тестове">
+      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/AdminServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ConditionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ConditionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/MolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/MolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByStatusQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByStatusQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByTypeQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByTypeQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductsQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductsQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/CategoryQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/CategoryQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/ProductStatusQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/ProductStatusQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/addConditionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/addConditionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/adminView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/adminView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerRegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerRegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/discardProductView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/discardedQueryView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/molView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/molView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/productQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/productQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AdminService$AdminServiceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AdminService$AdminServiceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService$AmortizationServiceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService$AmortizationServiceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/CategoryQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/CategoryQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/ProductStatusQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/ProductStatusQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/addConditionView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/addConditionView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/adminView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/adminView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/customerQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/customerQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/customerRegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/customerRegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/discardProductView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/discardedQueryView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/molView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/molView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/productQueryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/productQueryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation.views/productRegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ConditionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ConditionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerBoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerBoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/MolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/MolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByStatusQueryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByStatusQueryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByTypeQueryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductByTypeQueryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductsQueryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductsQueryController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +77,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -54,6 +112,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/.jdks" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -66,11 +126,17 @@
       <recent name="E:\OOP2_Project\InventoryManagement\src\main\resources\images" />
       <recent name="E:\OOP2_Project\InventoryManagement\src\main\resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="bg.tu_varna.sit.inventorymanagement.presentation.models" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="bg.tu_varna.sit.inventorymanagement.business.services" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AmortizationServiceTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.application.HelloApplication" />
       <module name="InventoryManagement" />
@@ -84,8 +150,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminServiceTest.getAllAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.AdminServiceTest" />
+      <option name="METHOD_NAME" value="getAllAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmortizationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.AmortizationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmortizationServiceTest.getAllAmortizations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.AmortizationServiceTest" />
+      <option name="METHOD_NAME" value="getAllAmortizations" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmortizationServiceTest.stringToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.AmortizationServiceTest" />
+      <option name="METHOD_NAME" value="stringToEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AmortizationServiceTest" />
+        <item itemvalue="JUnit.AmortizationServiceTest.stringToEntity" />
+        <item itemvalue="JUnit.AmortizationServiceTest.getAllAmortizations" />
+        <item itemvalue="JUnit.AdminServiceTest.getAllAdmin" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -398,11 +531,6 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/AmortizationService.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/models/AmortizationListViewModel.java</url>
           <line>46</line>
           <option name="timeStamp" value="12" />
@@ -429,22 +557,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.java</url>
-          <line>63</line>
+          <line>73</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.java</url>
-          <line>69</line>
+          <line>79</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/CustomerProdsController.java</url>
-          <line>57</line>
+          <line>67</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/presentation/controllers/ProductsQueryController.java</url>
-          <line>85</line>
+          <line>95</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>

@@ -10,28 +10,32 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane prefHeight="850.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Pane prefHeight="93.0" prefWidth="1162.0" style="-fx-background-color: #6F6CB5;" BorderPane.alignment="CENTER">
          <children>
-              <Button fx:id="getProductsButton" layoutX="581.0" layoutY="24.0" mnemonicParsing="false" onAction="#getAllProducts" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Справка">
+              <Button fx:id="getProductsButton" layoutX="957.0" layoutY="34.0" mnemonicParsing="false" onAction="#getAllProducts" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Справка">
                   <font>
                       <Font name="System Bold" size="12.0" />
                   </font>
               </Button>
-              <DatePicker fx:id="fromDate" layoutX="107.0" layoutY="36.0" onAction="#getFromDate" />
-              <Label layoutX="76.0" layoutY="40.0" prefHeight="18.0" prefWidth="19.0" text="ОТ">
+              <DatePicker fx:id="fromDate" layoutX="543.0" layoutY="50.0" onAction="#getFromDate" />
+              <Label layoutX="515.0" layoutY="54.0" prefHeight="18.0" prefWidth="19.0" text="ОТ">
                   <font>
                       <Font name="System Bold Italic" size="12.0" />
                   </font>
               </Label>
-              <Label layoutX="317.0" layoutY="40.0" prefHeight="18.0" prefWidth="19.0" text="ДО">
+              <Label layoutX="737.0" layoutY="53.0" prefHeight="18.0" prefWidth="19.0" text="ДО">
                   <font>
                       <Font name="System Bold Italic" size="12.0" />
                   </font>
               </Label>
-              <DatePicker fx:id="toDate" layoutX="355.0" layoutY="36.0" onAction="#getToDate" />
+              <DatePicker fx:id="toDate" layoutX="766.0" layoutY="49.0" onAction="#getToDate" />
+            <Button fx:id="backButton" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#goBack" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #F8F8FF;" text="Назад">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </top>

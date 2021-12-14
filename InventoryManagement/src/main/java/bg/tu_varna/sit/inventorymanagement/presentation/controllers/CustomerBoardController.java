@@ -11,7 +11,10 @@ import bg.tu_varna.sit.inventorymanagement.presentation.models.ProductListViewMo
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
@@ -19,6 +22,10 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
+
+import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.ADMIN_VIEW;
+import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.MOL_VIEW;
+import static bg.tu_varna.sit.inventorymanagement.presentation.controllers.LoginController.whichUser;
 
 public class CustomerBoardController implements Initializable {
     Stage s ;
@@ -50,6 +57,9 @@ public class CustomerBoardController implements Initializable {
 
     @FXML
     private Button cusButton1;
+
+    @FXML
+    private Button backButton;
 
     @FXML
     private ComboBox<CustomerListViewModel> customersComboBox;
@@ -121,6 +131,35 @@ public class CustomerBoardController implements Initializable {
         ObservableList<ProductListViewModel> products=productService.getAllProducts();
         productsComboBox.setItems(products);
 
+    }
+
+    @FXML
+    public void  goBack() {
+        if (whichUser)
+            try {
+                s.close();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(MOL_VIEW));
+                Stage stage = new Stage();
+                fxmlLoader.setController(new MolController(stage));
+                Parent root2 = fxmlLoader.load();
+                stage.setScene(new Scene(root2));
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        else {
+            try {
+                s.close();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_VIEW));
+                Stage stage = new Stage();
+                fxmlLoader.setController(new AdminController(stage));
+                Parent root1 = fxmlLoader.load();
+                stage.setScene(new Scene(root1));
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override

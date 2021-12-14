@@ -5,13 +5,14 @@ import bg.tu_varna.sit.inventorymanagement.data.repositories.AmortizationReposit
 import bg.tu_varna.sit.inventorymanagement.presentation.models.AmortizationListViewModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class AmortizationService {
     private final AmortizationRepository repositoryAmortization = AmortizationRepository.getInstance();
-
+    private static final Logger log= Logger.getLogger(AmortizationService.class);
     public static AmortizationService getInstance(){
         return AmortizationService.AmortizationServiceHolder.INSTANCE;
     }
@@ -24,9 +25,16 @@ public class AmortizationService {
     public ObservableList<AmortizationListViewModel> getAllAmortizations(){
         List<Amortization> amorts = repositoryAmortization.getAll();
 
+        if(amorts!=null){
         return FXCollections.observableList(
                 amorts.stream().map(a -> new AmortizationListViewModel(a.getIdAmortization()
                 )).collect(Collectors.toList()));
+        }
+        else
+        {
+            log.error("Cannot find any amortizations in database!");
+            return null;
+        }
     }
 
     public Amortization stringToEntity(String s){
@@ -50,6 +58,9 @@ public class AmortizationService {
             Amortization a = repositoryAmortization.getById(5);
             return a;
         }
-       else return null;
+       else {
+            log.error("Cannot find any amortizations in database!");
+            return null;
+        }
     }
 }

@@ -15,17 +15,17 @@
       </AnchorPane>
       <AnchorPane layoutY="62.0" prefHeight="140.0" prefWidth="817.0" style="-fx-background-color: #6F6CB5;">
          <children>
-            <Button fx:id="openRegisterCustomerButton" layoutX="73.0" layoutY="37.0" mnemonicParsing="false" onAction="#clientRegisterByAdmin" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Клиент" textAlignment="CENTER">
+            <Button fx:id="openRegisterCustomerButton" layoutX="73.0" layoutY="37.0" mnemonicParsing="false" onAction="#clientRegisterByUser" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Клиент" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="openRegisterProductButton" layoutX="248.0" layoutY="37.0" mnemonicParsing="false" onAction="#productRegisterByAdmin" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Продукт">
+            <Button fx:id="openRegisterProductButton" layoutX="248.0" layoutY="37.0" mnemonicParsing="false" onAction="#productRegisterByUser" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Продукт">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="boardButton" layoutX="424.0" layoutY="37.0" mnemonicParsing="false" onAction="#boardRegisterByAdmin" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Продукт към&#10;картон на клиент">
+            <Button fx:id="boardButton" layoutX="424.0" layoutY="37.0" mnemonicParsing="false" onAction="#boardRegisterByUser" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Продукт към&#10;картон на клиент">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -44,7 +44,7 @@
       </AnchorPane>
       <AnchorPane layoutY="201.0" prefHeight="149.0" prefWidth="817.0" style="-fx-background-color: #6F6CB5;">
          <children>
-            <Button fx:id="openRegisterConditionButton" layoutX="146.0" layoutY="41.0" mnemonicParsing="false" onAction="#conditionRegisterByAdmin" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Въвеждане на&#10;критерий за&#10;бракуване" textAlignment="CENTER">
+            <Button fx:id="openRegisterConditionButton" layoutX="146.0" layoutY="41.0" mnemonicParsing="false" onAction="#conditionRegisterByUser" prefHeight="98.0" prefWidth="160.0" style="-fx-background-color: #F8F8FF;" text="Въвеждане на&#10;критерий за&#10;бракуване" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

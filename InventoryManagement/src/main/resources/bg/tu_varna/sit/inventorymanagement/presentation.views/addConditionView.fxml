@@ -6,15 +6,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="172.0" prefWidth="354.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" >
+<AnchorPane prefHeight="172.0" prefWidth="354.0" style="-fx-background-color: #6F6CB5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <Button fx:id="conButton" layoutX="129.0" layoutY="109.0" mnemonicParsing="false" onAction="#addCondition" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #F8F8FF;" text="Въведи">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Button>
-        <TextField fx:id="condition" layoutX="103.0" layoutY="61.0" />
-        <Label layoutX="103.0" layoutY="44.0" prefHeight="17.0" prefWidth="97.0" text="Състояние">
+        <TextField fx:id="condition" layoutX="104.0" layoutY="74.0" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #F8F8FF;" text="Назад">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+        <Label layoutX="104.0" layoutY="50.0" prefHeight="17.0" prefWidth="97.0" text="Състояние">
             <font>
                 <Font name="System Bold Italic" size="12.0" />
             </font>

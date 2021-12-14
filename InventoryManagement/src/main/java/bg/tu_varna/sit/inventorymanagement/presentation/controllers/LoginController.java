@@ -1,24 +1,21 @@
 package bg.tu_varna.sit.inventorymanagement.presentation.controllers;
 
-import bg.tu_varna.sit.inventorymanagement.application.HelloApplication;
 import bg.tu_varna.sit.inventorymanagement.business.services.LoginService;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.AdminListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.MolListViewModel;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.ADMIN_VIEW;
 import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.MOL_VIEW;
 
 public class LoginController {
    Stage s =new Stage();
+   public static boolean whichUser;
 
     @FXML
     private Button logButton;
@@ -71,7 +68,7 @@ public class LoginController {
             if (logService.isAdminExist(adminFind))
             {
                 try
-                {
+                {   whichUser=false;
                     s.close();
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_VIEW));
                     Stage stage = new Stage();
@@ -98,6 +95,7 @@ public class LoginController {
             {
                 try
                 {
+                    whichUser=true;
                     s.close();
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(MOL_VIEW));
                     Stage stage = new Stage();

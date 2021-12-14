@@ -79,7 +79,7 @@ public class AdminController {
     }
 
     @FXML
-    public void boardRegisterByAdmin(){
+    public void boardRegisterByUser(){
         try {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(BOARD_REGISTER_VIEW));
@@ -126,7 +126,7 @@ public class AdminController {
     }
 
     @FXML
-    public void clientRegisterByAdmin(){
+    public void clientRegisterByUser(){
         try {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CUSTOMER_REGISTER_VIEW));
@@ -141,7 +141,7 @@ public class AdminController {
     }
 
     @FXML
-    public void productRegisterByAdmin(){
+    public void productRegisterByUser(){
         try {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(PRODUCT_REGISTER_VIEW));
@@ -156,7 +156,7 @@ public class AdminController {
     }
 
     @FXML
-    public void conditionRegisterByAdmin(){
+    public void conditionRegisterByUser(){
         try {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CONDITION_REGISTER_VIEW));
