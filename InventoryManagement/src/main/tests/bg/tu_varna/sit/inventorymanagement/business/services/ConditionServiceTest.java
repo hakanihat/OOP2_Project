@@ -1,21 +1,24 @@
 package bg.tu_varna.sit.inventorymanagement.business.services;
 
+import bg.tu_varna.sit.inventorymanagement.presentation.models.ConditionListViewModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ConditionServiceTest {
     private ConditionService conditionService;
+    private ConditionListViewModel conditionListViewModel;
 
     @BeforeEach
     void setUp() {
-        conditionService=ConditionService.getInstance();
+        this.conditionService=ConditionService.getInstance();
+        this.conditionListViewModel=new ConditionListViewModel("Broken");
     }
 
     @Test
     void addTheCondition() {
 
-       // assertEquals(1,);
+       assertTrue(conditionService.addTheCondition(conditionListViewModel));
     }
 }

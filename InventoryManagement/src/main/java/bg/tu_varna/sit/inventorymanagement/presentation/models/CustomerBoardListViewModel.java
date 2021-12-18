@@ -38,6 +38,7 @@ public class CustomerBoardListViewModel {
         this.returnDate=null;
     }
 
+
     public CustomerBoardListViewModel(Customer byCustomer) {
         this.byCustomer = byCustomer;
     }

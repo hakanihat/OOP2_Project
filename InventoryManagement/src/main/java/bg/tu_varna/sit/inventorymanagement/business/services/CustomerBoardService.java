@@ -26,18 +26,19 @@ public class CustomerBoardService {
         public static final CustomerBoardService INSTANCE = new CustomerBoardService();
     }
 
-    public void returnTheProduct(CustomerBoardListViewModel cb) {
+    public boolean  returnTheProduct(CustomerBoardListViewModel cb) {
         CustomerBoard customerBoard=new CustomerBoard(cb.getIdCustomerBoard(),  cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate(),cb.getReturnDate());
         List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
         for(CustomerBoard cusBoard: customerBoards)
         {
-            if(cusBoard.equals(customerBoard))
+            if(cusBoard.equals(customerBoard) && cusBoard.getReturnDate()==null)
             {customerBoard.setPkCustomerBoard(cusBoard.getPkCustomerBoard());
                 repositoryCustomerBoard.update(customerBoard);
             Product p=customerBoard.getByInventoryNumber();
             productService.changeStatus(p);
-            break;}
+            return true;}
         }
+        return false;
     }
 
     public ObservableList<CustomerBoardListViewModel> getProductsInPeriod(LocalDate myFromDate, LocalDate myToDate) {
@@ -76,7 +77,7 @@ public class CustomerBoardService {
     }
 
 
-    public CustomerBoard listViewToEntity(CustomerBoardListViewModel cb){
+    /*public CustomerBoard listViewToEntity(CustomerBoardListViewModel cb){
         CustomerBoard temp = new CustomerBoard(cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate());
         List<CustomerBoard> boards = repositoryCustomerBoard.getAll();
         for (CustomerBoard board: boards) {
@@ -84,7 +85,7 @@ public class CustomerBoardService {
                 return board;
         }
         return null;
-    }
+    }*/
 
     public ObservableList<CustomerBoardListViewModel> getAllBoards(){
         List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();

@@ -92,7 +92,7 @@ public class CustomerBoardRepository implements DAORepository<CustomerBoard>{
         Transaction transaction = session.beginTransaction();
         List<CustomerBoard> customerBoards = new LinkedList<>();
         try{
-            String jpql = "SELECT cb FROM CustomerBoard cb ";
+            String jpql = "SELECT cb FROM CustomerBoard cb ORDER BY cb.byCustomer,cb.returnDate";
             customerBoards.addAll(session.createQuery(jpql, CustomerBoard.class).getResultList());
             log.info("Successfully got  all Customer Boards!");
         }catch (Exception e){

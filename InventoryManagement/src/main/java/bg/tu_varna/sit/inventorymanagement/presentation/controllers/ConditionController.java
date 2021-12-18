@@ -6,7 +6,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -36,7 +38,16 @@ public class ConditionController {
     @FXML
     public void  addCondition()
     {   ConditionListViewModel addCon = new ConditionListViewModel(condition.getText());
-        conService.addTheCondition(addCon);
+        if(conService.addTheCondition(addCon))
+        {
+            Alert alert=new Alert(Alert.AlertType.INFORMATION,"The condition is added successfully!", ButtonType.OK);
+            alert.show();
+        }
+        else
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"The condition is already added!", ButtonType.OK);
+            alert.show();
+        }
 
 
     }

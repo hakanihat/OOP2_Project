@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name= "conditions")
@@ -52,6 +53,19 @@ public class Condition implements Serializable {
 
     public void setProducts(Set<Product> products) {
         this.products = products;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Condition condition = (Condition) o;
+        return Objects.equals(prodCondition, condition.prodCondition);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(prodCondition);
     }
 
     @Override

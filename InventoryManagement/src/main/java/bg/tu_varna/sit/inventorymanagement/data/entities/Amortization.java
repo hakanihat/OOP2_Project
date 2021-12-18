@@ -3,6 +3,8 @@ package bg.tu_varna.sit.inventorymanagement.data.entities;
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
+
 @Table(name= "amortization")
 @Entity
 public class Amortization implements Serializable {
@@ -52,7 +54,18 @@ public class Amortization implements Serializable {
         this.product = product;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Amortization that = (Amortization) o;
+        return Double.compare(that.amortDeg, amortDeg) == 0;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(amortDeg);
+    }
 
     @Override
     public String toString() {

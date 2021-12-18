@@ -30,6 +30,6 @@ class AmortizationServiceTest {
 
     @Test
     void stringToEntity() {
-        assertEquals(amortization,amortizationService.stringToEntity("Категория 1"));// уж са еднакви ???
+        assertEquals(amortization,amortizationService.stringToEntity("Категория 1"));
     }
 }

@@ -92,7 +92,7 @@ public class ProductRepository implements DAORepository<Product>{
         Transaction transaction = session.beginTransaction();
         List<Product> products = new LinkedList<>();
         try{
-            String jpql = "SELECT p FROM Product p ";
+            String jpql = "SELECT p FROM Product p ORDER BY p.description";
             products.addAll(session.createQuery(jpql, Product.class).getResultList());
             log.info("Successfully got all Products!");
         }catch (Exception e){

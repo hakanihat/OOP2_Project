@@ -108,9 +108,18 @@ public class CustomerBoardController implements Initializable {
         LocalDate localDate2 = LocalDate.now();
         forRemove.setReturnDate(localDate2);
         temp.clear();
-        //boardTable.setItems(temp);
 
-        customerBoardService.returnTheProduct(forRemove);
+        if(customerBoardService.returnTheProduct(forRemove))
+        {
+            Alert alert=new Alert(Alert.AlertType.INFORMATION,"The product has been returned successfully!",ButtonType.OK);
+            alert.show();
+        }
+
+        else
+        {
+            Alert alert=new Alert(Alert.AlertType.WARNING,"The product is already returned!",ButtonType.OK);
+            alert.show();
+        }
 
         temp = customerBoardService.getAllBoards();
         boardTable.setItems(temp);
