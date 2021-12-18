@@ -38,7 +38,7 @@ public class AmortizationService {
     }
 
     public Amortization stringToEntity(String s){
-        if(s=="Категория 1") {
+        if(s.equals("Категория 1")) {
             Amortization a = repositoryAmortization.getById(1);
             return a;
         }

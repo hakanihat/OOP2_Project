@@ -52,6 +52,8 @@ public class Amortization implements Serializable {
         this.product = product;
     }
 
+
+
     @Override
     public String toString() {
         return  " "+idAmortization;
