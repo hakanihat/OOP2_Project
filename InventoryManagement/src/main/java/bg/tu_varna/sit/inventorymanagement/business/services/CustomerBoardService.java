@@ -67,9 +67,9 @@ public class CustomerBoardService {
         Product prod;
             num=customerBoard.getByInventoryNumber().getIdInventoryNumber();
             prod=productService.getProductById(num);
-            if( prod.isProdStatus()==false)
+            if(!prod.isProdStatus())
             return 0;
-            if( prod.isDiscarded()==true)
+            if(prod.isDiscarded())
                 return 1;
         repositoryCustomerBoard.save(customerBoard);
         productService.changeStatus(prod);
