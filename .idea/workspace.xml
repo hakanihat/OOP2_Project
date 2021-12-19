@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="тестове...">
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/MolServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ProductServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/data/repositories/AdminRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/LoginServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/LoginServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService$ProductServiceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService$ProductServiceHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/data/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/data/entities/Product.class" afterDir="false" />
-    </list>
+    <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="JUnit tests ready!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -484,7 +472,28 @@
       <option name="project" value="LOCAL" />
       <updated>1639918426240</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="JUnit tests ready!">
+      <created>1639933602027</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1639933602027</updated>
+    </task>
+    <task id="LOCAL-00044" summary="JUnit tests ready!">
+      <created>1639933611896</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1639933611896</updated>
+    </task>
+    <task id="LOCAL-00045" summary="JUnit tests ready!">
+      <created>1639933617523</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1639933617523</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -514,7 +523,8 @@
     <MESSAGE value=" Справки ..." />
     <MESSAGE value=" Справките са готови. За утре остават връщане в начална страница и тестове" />
     <MESSAGE value="тестове..." />
-    <option name="LAST_COMMIT_MESSAGE" value="тестове..." />
+    <MESSAGE value="JUnit tests ready!" />
+    <option name="LAST_COMMIT_MESSAGE" value="JUnit tests ready!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
