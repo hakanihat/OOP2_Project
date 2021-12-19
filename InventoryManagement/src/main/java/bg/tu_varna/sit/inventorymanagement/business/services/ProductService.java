@@ -18,6 +18,13 @@ public class ProductService {
         return ProductService.ProductServiceHolder.INSTANCE;
     }
 
+    private static class ProductServiceHolder {
+        public static final ProductService INSTANCE = new ProductService();
+    }
+
+
+
+
     public ObservableList<ProductListViewModel> getAllProductsInPeriod(LocalDate myFromDate, LocalDate myToDate) {
         List<Product> products = repositoryProduct.getAll();
         List<Product> productsInPeriod = new ArrayList<>();
@@ -32,6 +39,9 @@ public class ProductService {
                         p.getIdInventoryNumber(),p.getDescription(),p.getProdType(),p.isProdStatus(),p.getExploatationStart(),p.getProductValue(),p.getByMol(),p.getByAmortization(),p.getDiscardDate()
                 )).collect(Collectors.toList()));
     }
+
+
+
 
     public ObservableList<ProductListViewModel> getAllProductsByTypeInPeriod(LocalDate myFromDate, LocalDate myToDate, boolean whatType) {
         List<Product> products = repositoryProduct.getAll();
@@ -61,6 +71,10 @@ public class ProductService {
                         p.getIdInventoryNumber(),p.getDescription(),p.getProdType(),p.isProdStatus(),p.getExploatationStart(),p.getProductValue(),p.getByMol(),p.getByAmortization(),p.getDiscardDate()
                 )).collect(Collectors.toList()));
     }
+
+
+
+
 
     public ObservableList<ProductListViewModel> getAllProductsByStatInPeriod(LocalDate myFromDate, LocalDate myToDate, boolean isAvailable) {
         List<Product> products = repositoryProduct.getAll();
@@ -92,9 +106,10 @@ public class ProductService {
 
     }
 
-    private static class ProductServiceHolder {
-        public static final ProductService INSTANCE = new ProductService();
-    }
+
+
+
+
 
     public void addTheProduct(ProductListViewModel p)
     {
@@ -102,6 +117,8 @@ public class ProductService {
         repositoryProduct.save(product);
 
     }
+
+
 
     public Product listViewToEntity(ProductListViewModel p){
         Product temp = new Product(p.getIdInventoryNumber(),p.getDescription());

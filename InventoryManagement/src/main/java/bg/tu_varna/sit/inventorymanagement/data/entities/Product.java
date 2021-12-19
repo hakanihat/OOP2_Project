@@ -63,6 +63,11 @@ public class Product implements Serializable{
         this.description = description;
     }
 
+    public Product(int idInventoryNumber, boolean prodStatus) {
+        this.idInventoryNumber = idInventoryNumber;
+        this.prodStatus = prodStatus;
+    }
+
     public Product(String description, String prodType, boolean prodStatus, LocalDate discardDate, double productValue, LocalDate exploatationStart, boolean isDiscarded, Condition byCondition, Mol byMol, Amortization byAmortization) {
         this.description = description;
         this.prodType = prodType;

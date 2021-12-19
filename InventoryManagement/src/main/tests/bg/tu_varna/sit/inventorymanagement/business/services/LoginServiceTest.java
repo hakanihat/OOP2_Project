@@ -20,9 +20,6 @@ class LoginServiceTest {
         molListViewModel= new MolListViewModel("t1","123");
     }
 
-    @AfterEach
-    void tearDown() {
-    }
 
     @Test
     void isAdminExist() {

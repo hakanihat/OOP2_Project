@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="тестове...">
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/CustomerServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/LoginServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/MolServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/data/repositories/AdminRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/LoginService$LoginServiceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/LoginService$LoginServiceHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/configuration/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/test-classes/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/test-classes/bg/tu_varna/sit/inventorymanagement/business/services/ConditionServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/test-classes/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/test-classes/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/data/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/LoginServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/LoginServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService$ProductServiceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService$ProductServiceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/business/services/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/data/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/target/classes/bg/tu_varna/sit/inventorymanagement/data/entities/Product.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,72 +86,76 @@
       <recent name="bg.tu_varna.sit.inventorymanagement.presentation.models" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="bg.tu_varna.sit.inventorymanagement.data.repositories" />
       <recent name="bg.tu_varna.sit.inventorymanagement.business.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginServiceTest">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.application.HelloApplication" />
+  <component name="RunManager" selected="JUnit.AdminRepositoryTest.update">
+    <configuration name="AdminRepositoryTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InventoryManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.application.*" />
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.data.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConditionServiceTest.addTheCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InventoryManagement" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.ConditionServiceTest" />
-      <option name="METHOD_NAME" value="addTheCondition" />
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories.AdminRepositoryTest" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.getAllCustomers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminRepositoryTest.getById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InventoryManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.data.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="getAllCustomers" />
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories.AdminRepositoryTest" />
+      <option name="METHOD_NAME" value="getById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.listViewToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminRepositoryTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InventoryManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.business.services.*" />
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.data.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="listViewToEntity" />
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories.AdminRepositoryTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminRepositoryTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.tu_varna.sit.inventorymanagement.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.data.repositories.AdminRepositoryTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.getAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InventoryManagement" />
       <extension name="coverage">
         <pattern>
@@ -163,19 +164,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services" />
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.LoginServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.inventorymanagement.business.services.ProductServiceTest" />
+      <option name="METHOD_NAME" value="getAllProducts" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginServiceTest" />
-        <item itemvalue="Application.HelloApplication" />
-        <item itemvalue="JUnit.CustomerServiceTest.getAllCustomers" />
-        <item itemvalue="JUnit.CustomerServiceTest.listViewToEntity" />
-        <item itemvalue="JUnit.ConditionServiceTest.addTheCondition" />
+        <item itemvalue="JUnit.AdminRepositoryTest.update" />
+        <item itemvalue="JUnit.AdminRepositoryTest.save" />
+        <item itemvalue="JUnit.AdminRepositoryTest.getById" />
+        <item itemvalue="JUnit.AdminRepositoryTest.delete" />
+        <item itemvalue="JUnit.ProductServiceTest.getAllProducts" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639850086246</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="тестове...">
+      <created>1639918426240</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1639918426240</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,11 +563,6 @@
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/java/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardService.java</url>
           <line>44</line>
           <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/LoginServiceTest.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/InventoryManagement/src/main/tests/bg/tu_varna/sit/inventorymanagement/business/services/CustomerBoardServiceTest.java</url>

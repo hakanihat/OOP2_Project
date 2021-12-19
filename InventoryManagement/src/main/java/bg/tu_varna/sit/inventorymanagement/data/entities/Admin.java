@@ -70,10 +70,6 @@ public class Admin implements Serializable {
 
     @Override
     public String toString() {
-        return "Admin{" +
-                "pkAdminId=" + idAdmin +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return "pkAdminId=" + idAdmin;
     }
 }
