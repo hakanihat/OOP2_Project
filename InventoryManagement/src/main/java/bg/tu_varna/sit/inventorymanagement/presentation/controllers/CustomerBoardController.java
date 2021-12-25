@@ -73,10 +73,18 @@ public class CustomerBoardController implements Initializable {
 
     @FXML
     private void boardRegistration(){
-        temp.clear();
-        boardTable.setItems(temp);
-        LocalDate localDate = LocalDate.now();
-        CustomerBoardListViewModel addToBoard = new CustomerBoardListViewModel(customerService.listViewToEntity(customersComboBox.getValue()),productService.listViewToEntity(productsComboBox.getValue()),localDate);
+
+        if(customersComboBox.getValue()==null || productsComboBox.getValue()==null)
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all field!", ButtonType.OK);
+            alert.show();
+        }
+
+        else{
+            temp.clear();
+            boardTable.setItems(temp);
+            LocalDate localDate = LocalDate.now();
+            CustomerBoardListViewModel addToBoard = new CustomerBoardListViewModel(customerService.listViewToEntity(customersComboBox.getValue()),productService.listViewToEntity(productsComboBox.getValue()),localDate);
         isExist= customerBoardService.addToTheBoard(addToBoard);
 
         if(isExist==0) {
@@ -95,6 +103,7 @@ public class CustomerBoardController implements Initializable {
         }
         temp = customerBoardService.getAllBoards();
         boardTable.setItems(temp);
+        }
     }
 
     @FXML

@@ -14,10 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -81,7 +78,16 @@ public class ProductController implements Initializable {
     {
      ProductListViewModel addProd = new ProductListViewModel(prod_description.getText(),prodType.getValue(),date_discard.getValue(),Double.parseDouble(prod_value.getText()) ,date_exp.getValue(),conditionService.getGoodCondition(),
                 molService.listViewToEntity(prod_mol.getValue()),amortizationService.stringToEntity(amortizations.getValue()));
-        productService.addTheProduct(addProd);
+     if(prod_description.getText().equals("") || prodType.getValue().equals("") || date_discard.getValue().equals("") || prod_value.getText().equals("") || date_exp.getValue().equals("") || prod_mol.getValue().equals(""))
+     {
+         Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all field!", ButtonType.OK);
+         alert.show();
+     }
+     else {
+         productService.addTheProduct(addProd);
+         Alert alert=new Alert(Alert.AlertType.INFORMATION,"The customer has been registered successfully!", ButtonType.OK);
+         alert.show();
+     }
     }
 
     @FXML
