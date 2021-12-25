@@ -47,7 +47,7 @@ public class CustomerController {
     public void  addCustomer()
     {   CustomerListViewModel addCus = new CustomerListViewModel(cusName.getText(),cusTelNum.getText(),cusEmail.getText());
         if(cusName.getText().equals("") || cusTelNum.getText().equals("") || cusEmail.getText().equals("")) {
-            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all field!", ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
             alert.show();
         }
         else {

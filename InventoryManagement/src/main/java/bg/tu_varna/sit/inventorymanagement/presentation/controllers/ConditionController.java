@@ -38,17 +38,20 @@ public class ConditionController {
     @FXML
     public void  addCondition()
     {   ConditionListViewModel addCon = new ConditionListViewModel(condition.getText());
-        if(conService.addTheCondition(addCon))
+        if(condition.getText().equals(""))
         {
-            Alert alert=new Alert(Alert.AlertType.INFORMATION,"The condition is added successfully!", ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
             alert.show();
         }
-        else
-        {
-            Alert alert=new Alert(Alert.AlertType.ERROR,"The condition is already added!", ButtonType.OK);
-            alert.show();
+        else {
+            if (conService.addTheCondition(addCon)) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "The condition is added successfully!", ButtonType.OK);
+                alert.show();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.ERROR, "The condition is already added!", ButtonType.OK);
+                alert.show();
+            }
         }
-
 
     }
 

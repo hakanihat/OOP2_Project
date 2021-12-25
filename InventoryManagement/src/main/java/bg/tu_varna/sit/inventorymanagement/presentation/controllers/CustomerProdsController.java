@@ -10,10 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -77,8 +74,15 @@ public class CustomerProdsController implements Initializable {
     @FXML
     private void getCusProdOpen(){
 
+        if(myFromDate==null || myToDate==null)
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
+            alert.show();
+        }
+        else{
         ObservableList<CustomerBoardListViewModel> productsInPeriod = customerBoardService.getProductsInPeriod(myFromDate, myToDate);
         cusProdTable.setItems(productsInPeriod);
+        }
     }
 
     @FXML

@@ -104,8 +104,15 @@ public class ProductByStatusQueryController implements Initializable {
             isAvailable=true;
         else if(falseProducts.isSelected())
             isAvailable=false;
-        ObservableList<ProductListViewModel> productsInPeriod = productService.getAllProductsByStatInPeriod(myFromDate, myToDate,isAvailable);
-        allProdByStatTable.setItems(productsInPeriod);
+        if(myFromDate==null || myToDate==null)
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
+            alert.show();
+        }
+        else {
+            ObservableList<ProductListViewModel> productsInPeriod = productService.getAllProductsByStatInPeriod(myFromDate, myToDate, isAvailable);
+            allProdByStatTable.setItems(productsInPeriod);
+        }
     }
 
     @FXML

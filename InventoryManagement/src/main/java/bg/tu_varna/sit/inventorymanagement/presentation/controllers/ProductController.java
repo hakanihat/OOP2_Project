@@ -80,7 +80,7 @@ public class ProductController implements Initializable {
                 molService.listViewToEntity(prod_mol.getValue()),amortizationService.stringToEntity(amortizations.getValue()));
      if(prod_description.getText().equals("") || prodType.getValue().equals("") || date_discard.getValue().equals("") || prod_value.getText().equals("") || date_exp.getValue().equals("") || prod_mol.getValue().equals(""))
      {
-         Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all field!", ButtonType.OK);
+         Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
          alert.show();
      }
      else {

@@ -104,8 +104,15 @@ public class ProductByTypeQueryController implements Initializable {
             whatType=true;
         else if(maProducts.isSelected())
             whatType=false;
-        ObservableList<ProductListViewModel> productsInPeriod = productService.getAllProductsByTypeInPeriod(myFromDate, myToDate,whatType);
-        allProdByTypeTable.setItems(productsInPeriod);
+        if(myFromDate==null || myToDate==null)
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
+            alert.show();
+        }
+        else {
+            ObservableList<ProductListViewModel> productsInPeriod = productService.getAllProductsByTypeInPeriod(myFromDate, myToDate, whatType);
+            allProdByTypeTable.setItems(productsInPeriod);
+        }
     }
 
     @FXML

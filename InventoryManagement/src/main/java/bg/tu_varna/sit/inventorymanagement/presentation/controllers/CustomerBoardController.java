@@ -76,7 +76,7 @@ public class CustomerBoardController implements Initializable {
 
         if(customersComboBox.getValue()==null || productsComboBox.getValue()==null)
         {
-            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all field!", ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
             alert.show();
         }
 

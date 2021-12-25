@@ -11,10 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
@@ -93,8 +90,15 @@ public class ProductsQueryController implements Initializable {
 
     @FXML
     public void getAllProducts(){
-        ObservableList<ProductListViewModel> productsInPeriod = productService.getAllProductsInPeriod(myFromDate, myToDate);
-        allProdTable.setItems(productsInPeriod);
+        if(myFromDate==null || myToDate==null)
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
+            alert.show();
+        }
+        else {
+            ObservableList<ProductListViewModel> productsInPeriod = productService.getAllProductsInPeriod(myFromDate, myToDate);
+            allProdTable.setItems(productsInPeriod);
+        }
     }
 
     @FXML
