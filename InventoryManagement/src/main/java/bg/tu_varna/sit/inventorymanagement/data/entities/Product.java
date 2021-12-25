@@ -98,24 +98,12 @@ public class Product implements Serializable{
         return idInventoryNumber;
     }
 
-    public void setIdInventoryNumber(int idInventoryNumber) {
-        this.idInventoryNumber = idInventoryNumber;
-    }
-
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getProdType() {
         return prodType;
-    }
-
-    public void setProdType(String prodType) {
-        this.prodType = prodType;
     }
 
     public boolean isProdStatus() {
@@ -130,61 +118,26 @@ public class Product implements Serializable{
         return discardDate;
     }
 
-    public void setDiscardDate(LocalDate discardDate) {
-        this.discardDate = discardDate;
-    }
-
     public double getProductValue() {
         return productValue;
-    }
-
-    public void setProductValue(double productValue) {
-        this.productValue = productValue;
     }
 
     public LocalDate getExploatationStart() {
         return exploatationStart;
     }
 
-    public void setExploatationStart(LocalDate exploatationStart) {
-        this.exploatationStart = exploatationStart;
-    }
-
     public boolean isDiscarded() {
         return isDiscarded;
-    }
-
-    public void setDiscarded(boolean discarded) {
-        isDiscarded = discarded;
-    }
-
-    public Condition getByCondition() {
-        return byCondition;
-    }
-
-    public void setByCondition(Condition byCondition) {
-        this.byCondition = byCondition;
     }
 
     public Amortization getByAmortization() {
         return byAmortization;
     }
 
-    public void setByAmortization(Amortization byAmortization) {
-        this.byAmortization = byAmortization;
-    }
-
     public Mol getByMol() {
         return byMol;
     }
 
-    public void setByMol(Mol byMol) {
-        this.byMol = byMol;
-    }
-
-    public Set<CustomerBoard> getProducts() {
-        return products;
-    }
 
 
     @Override
@@ -195,14 +148,6 @@ public class Product implements Serializable{
         return Objects.equals(idInventoryNumber, product.idInventoryNumber);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(idInventoryNumber);
-    }
-
-    public void setProducts(Set<CustomerBoard> products) {
-        this.products = products;
-    }
 
     @Override
     public String toString() {

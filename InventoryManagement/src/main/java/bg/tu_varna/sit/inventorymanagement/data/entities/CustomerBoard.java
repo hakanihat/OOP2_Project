@@ -48,26 +48,13 @@ public class CustomerBoard  implements  Serializable{
         this.returnDate = returnDate;
     }
 
-    public CustomerBoard(Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate) {
-        this.byCustomer = byCustomer;
-        this.byInventoryNumber = byInventoryNumber;
-        this.registeredDate = registeredDate;
-    }
-
-    public int getIdCustomerBoard() {
-        return idCustomerBoard;
-    }
-
-    public void setIdCustomerBoard(int idCustomerBoard) {
-        this.idCustomerBoard = idCustomerBoard;
-    }
 
     public int getPkCustomerBoard() {
         return idCustomerBoard;
     }
 
-    public void setPkCustomerBoard(int pkCustomerBoard) {
-        this.idCustomerBoard = pkCustomerBoard;
+    public void setPkCustomerBoard(int idCustomerBoard) {
+        this.idCustomerBoard = idCustomerBoard;
     }
 
     public Customer getByCustomer() {
@@ -110,10 +97,6 @@ public class CustomerBoard  implements  Serializable{
         return Objects.equals(byCustomer, board.byCustomer) && Objects.equals(byInventoryNumber, board.byInventoryNumber);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(byCustomer, byInventoryNumber);
-    }
 
     @Override
     public String toString() {

@@ -64,11 +64,6 @@ public class Condition implements Serializable {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(prodCondition);
-    }
-
-    @Override
     public String toString() {
         return  prodCondition ;
     }

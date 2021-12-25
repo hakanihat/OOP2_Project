@@ -64,11 +64,6 @@ public class Admin implements Serializable {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(username, password);
-    }
-
-    @Override
     public String toString() {
         return "pkAdminId=" + idAdmin;
     }

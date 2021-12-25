@@ -87,10 +87,6 @@ public class Customer implements Serializable {
         return Objects.equals(cusName, customer.cusName) && Objects.equals(telNum, customer.telNum) && Objects.equals(email, customer.email);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cusName, telNum, email);
-    }
 
     @Override
     public String toString() {

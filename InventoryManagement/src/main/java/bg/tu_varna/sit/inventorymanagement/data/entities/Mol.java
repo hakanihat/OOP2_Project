@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 @Table(name= "mols")
@@ -102,10 +101,7 @@ public class Mol implements Serializable {
         return username.equals(mol.username) && password.equals(mol.password);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(username, password);
-    }
+
 
     @Override
     public String toString() {
