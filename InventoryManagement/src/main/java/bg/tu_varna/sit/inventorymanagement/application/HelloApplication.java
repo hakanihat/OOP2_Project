@@ -1,7 +1,6 @@
 package bg.tu_varna.sit.inventorymanagement.application;
 
 import bg.tu_varna.sit.inventorymanagement.common.Constants;
-import bg.tu_varna.sit.inventorymanagement.presentation.controllers.HelloController;
 import bg.tu_varna.sit.inventorymanagement.presentation.controllers.LoginController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

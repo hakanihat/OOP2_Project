@@ -24,9 +24,6 @@ import static bg.tu_varna.sit.inventorymanagement.presentation.controllers.Login
 
 public class CustomerProdsController implements Initializable {
     Stage s ;
-    public CustomerProdsController(Stage stage){
-        s=stage;
-    }
 
     private final CustomerBoardService customerBoardService=CustomerBoardService.getInstance();
 
@@ -59,6 +56,11 @@ public class CustomerProdsController implements Initializable {
 
     LocalDate myFromDate;
     LocalDate myToDate;
+
+    public CustomerProdsController(Stage stage){
+        s=stage;
+    }
+
     @FXML
     public void getFromDate()
     {
@@ -72,7 +74,7 @@ public class CustomerProdsController implements Initializable {
     }
 
     @FXML
-    private void getCusProdOpen(){
+    public void getCusProdOpen(){
 
         if(myFromDate==null || myToDate==null)
         {

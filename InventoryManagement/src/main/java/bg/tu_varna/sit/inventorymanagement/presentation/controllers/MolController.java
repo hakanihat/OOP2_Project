@@ -12,9 +12,6 @@ import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.*;
 
 public class MolController {
     Stage s = new Stage();
-    public MolController(Stage stage){
-        s=stage;
-    }
 
     private final MolService adminService=MolService.getInstance();
 
@@ -43,7 +40,9 @@ public class MolController {
     @FXML
     private Button getByTypeButton;
 
-
+    public MolController(Stage stage){
+        s=stage;
+    }
 
     @FXML
     public void cusProdsQueryOpen(){

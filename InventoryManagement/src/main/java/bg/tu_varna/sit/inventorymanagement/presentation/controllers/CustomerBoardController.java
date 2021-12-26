@@ -29,9 +29,6 @@ import static bg.tu_varna.sit.inventorymanagement.presentation.controllers.Login
 
 public class CustomerBoardController implements Initializable {
     Stage s ;
-    public CustomerBoardController(Stage stage){
-        s=stage;
-    }
 
     private final CustomerBoardService customerBoardService=CustomerBoardService.getInstance();
     private final CustomerService customerService=CustomerService.getInstance();
@@ -71,8 +68,12 @@ public class CustomerBoardController implements Initializable {
     CustomerBoardListViewModel forRemove;
     int isExist;
 
+    public CustomerBoardController(Stage stage){
+        s=stage;
+    }
+
     @FXML
-    private void boardRegistration(){
+    public void boardRegistration(){
 
         if(customersComboBox.getValue()==null || productsComboBox.getValue()==null)
         {
@@ -113,7 +114,7 @@ public class CustomerBoardController implements Initializable {
 
 
     @FXML
-    private void boardRemove(ActionEvent event){
+    public void boardRemove(ActionEvent event){
         LocalDate localDate2 = LocalDate.now();
         forRemove.setReturnDate(localDate2);
         temp.clear();

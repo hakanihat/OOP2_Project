@@ -15,6 +15,7 @@ import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.MOL_VIEW
 
 public class LoginController {
    Stage s =new Stage();
+
    public static boolean whichUser;
 
     @FXML
@@ -36,11 +37,13 @@ public class LoginController {
     private RadioButton asMol;
 
     private final LoginService logService=LoginService.getInstance();
+
     public LoginController(){ }
 
     public LoginController(Stage stage){
         s=stage;
     }
+
     @FXML
     public void userLogin()
     {

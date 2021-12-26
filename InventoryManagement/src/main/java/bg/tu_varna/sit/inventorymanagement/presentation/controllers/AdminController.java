@@ -12,9 +12,6 @@ import static bg.tu_varna.sit.inventorymanagement.common.Constants.View.*;
 
 public class AdminController {
     Stage s ;
-    public AdminController(Stage stage){
-        s=stage;
-    }
 
     private final AdminService adminService=AdminService.getInstance();
 
@@ -42,7 +39,9 @@ public class AdminController {
     @FXML
     private Button getByTypeButton;
 
-
+    public AdminController(Stage stage){
+        s=stage;
+    }
 
     @FXML
     public void cusProdsQueryOpen(){
