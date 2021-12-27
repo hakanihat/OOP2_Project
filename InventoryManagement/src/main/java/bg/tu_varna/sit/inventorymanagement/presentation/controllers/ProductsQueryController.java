@@ -25,9 +25,7 @@ import static bg.tu_varna.sit.inventorymanagement.presentation.controllers.Login
 
 public class ProductsQueryController implements Initializable {
     Stage s ;
-    public ProductsQueryController(Stage stage){
-        s=stage;
-    }
+
 
     private final ProductService productService=ProductService.getInstance();
 
@@ -75,6 +73,10 @@ public class ProductsQueryController implements Initializable {
 
     LocalDate myFromDate;
     LocalDate myToDate;
+
+    public ProductsQueryController(Stage stage){
+        s=stage;
+    }
 
     @FXML
     public void getFromDate()
