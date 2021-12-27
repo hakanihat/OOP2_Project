@@ -32,9 +32,7 @@ public class ProductController implements Initializable {
     private final MolService molService=MolService.getInstance();
     private final AmortizationService amortizationService=AmortizationService.getInstance();
     private final ConditionService conditionService=ConditionService.getInstance();
-    public ProductController(Stage stage){
-        s=stage;
-    }
+
     @FXML
     private TextField prod_description;
 
@@ -62,9 +60,13 @@ public class ProductController implements Initializable {
     @FXML
     private Button backButton;
 
-    private ObservableList<String> types = FXCollections.observableArrayList("ДМА","МА");
-    private ObservableList<String> categories =
+    private final ObservableList<String> types = FXCollections.observableArrayList("ДМА","МА");
+    private final ObservableList<String> categories =
             FXCollections.observableArrayList("Категория 1","Категория 2","Категория 3","Категория 4","Категория 5");
+
+    public ProductController(Stage stage){
+        s=stage;
+    }
 
     public void fillMols()
     {
@@ -78,7 +80,7 @@ public class ProductController implements Initializable {
     {
      ProductListViewModel addProd = new ProductListViewModel(prod_description.getText(),prodType.getValue(),date_discard.getValue(),Double.parseDouble(prod_value.getText()) ,date_exp.getValue(),conditionService.getGoodCondition(),
                 molService.listViewToEntity(prod_mol.getValue()),amortizationService.stringToEntity(amortizations.getValue()));
-     if(prod_description.getText().equals("") || prodType.getValue().equals("") || date_discard.getValue().equals("") || prod_value.getText().equals("") || date_exp.getValue().equals("") || prod_mol.getValue().equals(""))
+     if(prod_description.getText().equals("") || prodType.getValue().equals("") || date_discard.getValue()==null || prod_value.getText().equals("") || date_exp.getValue()==null || prod_mol.getValue().equals(""))
      {
          Alert alert=new Alert(Alert.AlertType.ERROR,"Please,fill all fields!", ButtonType.OK);
          alert.show();

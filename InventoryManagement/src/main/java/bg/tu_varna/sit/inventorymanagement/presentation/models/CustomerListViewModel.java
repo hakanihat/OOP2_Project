@@ -25,36 +25,17 @@ public class CustomerListViewModel {
         this.email = email;
     }
 
-    public int getIdCustomer() {
-        return idCustomer;
-    }
-
-    public void setIdCustomer(int idCustomer) {
-        this.idCustomer = idCustomer;
-    }
 
     public String getCusName() {
         return cusName;
-    }
-
-    public void setCusName(String cusName) {
-        this.cusName = cusName;
     }
 
     public String getTelNum() {
         return telNum;
     }
 
-    public void setTelNum(String telNum) {
-        this.telNum = telNum;
-    }
-
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     @Override
@@ -63,11 +44,6 @@ public class CustomerListViewModel {
         if (o == null || getClass() != o.getClass()) return false;
         CustomerListViewModel that = (CustomerListViewModel) o;
         return Objects.equals(cusName, that.cusName) && Objects.equals(telNum, that.telNum) && Objects.equals(email, that.email);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(cusName, telNum, email);
     }
 
     @Override

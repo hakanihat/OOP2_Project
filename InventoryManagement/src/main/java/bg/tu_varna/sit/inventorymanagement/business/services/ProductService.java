@@ -137,7 +137,7 @@ public class ProductService {
     }
 
     public void changeStatus(Product p){
-        if(p.isProdStatus()==true)
+        if(p.isProdStatus())
             p.setProdStatus(false);
         else
             p.setProdStatus(true);

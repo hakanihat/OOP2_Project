@@ -1,14 +1,10 @@
 package bg.tu_varna.sit.inventorymanagement.business.services;
 
-import bg.tu_varna.sit.inventorymanagement.data.repositories.AdminRepository;
-import bg.tu_varna.sit.inventorymanagement.data.repositories.MolRepository;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.AdminListViewModel;
 import bg.tu_varna.sit.inventorymanagement.presentation.models.MolListViewModel;
 import javafx.collections.ObservableList;
 
 public class LoginService {
-    private final AdminRepository repositoryAdmin = AdminRepository.getInstance();
-    private final MolRepository repositoryMol = MolRepository.getInstance();
     private final AdminService adminService= AdminService.getInstance();
     private final MolService molService= MolService.getInstance();
 
