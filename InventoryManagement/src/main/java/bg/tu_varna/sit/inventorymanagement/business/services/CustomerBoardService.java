@@ -77,15 +77,7 @@ public class CustomerBoardService {
     }
 
 
-    /*public CustomerBoard listViewToEntity(CustomerBoardListViewModel cb){
-        CustomerBoard temp = new CustomerBoard(cb.getByCustomer(),cb.getByInventoryNumber(),cb.getRegisteredDate());
-        List<CustomerBoard> boards = repositoryCustomerBoard.getAll();
-        for (CustomerBoard board: boards) {
-            if(board.equals(temp))
-                return board;
-        }
-        return null;
-    }*/
+
 
     public ObservableList<CustomerBoardListViewModel> getAllBoards(){
         List<CustomerBoard> customerBoards = repositoryCustomerBoard.getAll();
