@@ -16,13 +16,6 @@ public class CustomerBoardListViewModel {
     public CustomerBoardListViewModel() {
     }
 
-    public CustomerBoardListViewModel(int idCustomerBoard, Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
-        this.idCustomerBoard = idCustomerBoard;
-        this.byCustomer = byCustomer;
-        this.byInventoryNumber = byInventoryNumber;
-        this.registeredDate = registeredDate;
-        this.returnDate = returnDate;
-    }
 
     public CustomerBoardListViewModel(Customer byCustomer, Product byInventoryNumber, LocalDate registeredDate, LocalDate returnDate) {
         this.byCustomer = byCustomer;
@@ -39,45 +32,20 @@ public class CustomerBoardListViewModel {
     }
 
 
-    public CustomerBoardListViewModel(Customer byCustomer) {
-        this.byCustomer = byCustomer;
-    }
-
-    public CustomerBoardListViewModel(Customer byCustomer, Product byInventoryNumber) {
-        this.byCustomer = byCustomer;
-        this.byInventoryNumber = byInventoryNumber;
-    }
-
     public int getIdCustomerBoard() {
         return idCustomerBoard;
-    }
-
-    public void setIdCustomerBoard(int idCustomerBoard) {
-        this.idCustomerBoard = idCustomerBoard;
     }
 
     public Customer getByCustomer() {
         return byCustomer;
     }
 
-    public void setByCustomer(Customer byCustomer) {
-        this.byCustomer = byCustomer;
-    }
-
     public Product getByInventoryNumber() {
         return byInventoryNumber;
     }
 
-    public void setByInventoryNumber(Product byInventoryNumber) {
-        this.byInventoryNumber = byInventoryNumber;
-    }
-
     public LocalDate getRegisteredDate() {
         return registeredDate;
-    }
-
-    public void setRegisteredDate(LocalDate registeredDate) {
-        this.registeredDate = registeredDate;
     }
 
     public LocalDate getReturnDate() {
@@ -89,13 +57,6 @@ public class CustomerBoardListViewModel {
     }
 
     @Override
-    public String toString() {
-        return "CustomerBoardListViewModel{" +
-                "byCustomer=" + byCustomer +
-                ", byInventoryNumber=" + byInventoryNumber ;
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -104,7 +65,10 @@ public class CustomerBoardListViewModel {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(byCustomer, byInventoryNumber);
+    public String toString() {
+        return "CustomerBoardListViewModel{" +
+                "byCustomer=" + byCustomer +
+                ", byInventoryNumber=" + byInventoryNumber ;
     }
+
 }
