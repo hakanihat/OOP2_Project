@@ -45,7 +45,10 @@
             <TextField fx:id="username" layoutX="135.0" layoutY="188.0" promptText="Username" />
             <PasswordField fx:id="password" layoutX="135.0" layoutY="255.0" promptText="Password" />
             <Button fx:id="logButton" layoutX="134.0" layoutY="306.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="40.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;" text="Log in" />
-            <Label fx:id="wrongLogin" layoutX="35.0" layoutY="127.0" prefHeight="18.0" prefWidth="266.0" textFill="RED" />
+            <Label fx:id="wrongLogin" layoutX="35.0" layoutY="127.0" prefHeight="18.0" prefWidth="266.0" textFill="#bc0202" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
             <RadioButton fx:id="asAdmin" layoutX="35.0" layoutY="158.0" mnemonicParsing="false" selected="true" text="ADMIN">
                <toggleGroup>
                   <ToggleGroup fx:id="ch" />
