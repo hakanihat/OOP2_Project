@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b31c07d1-8bce-4ce4-9dcd-138d2a049986" name="Changes" comment="Поправки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/customerBoardView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagement/src/main/resources/bg/tu_varna/sit/inventorymanagement/presentation.views/loginView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
