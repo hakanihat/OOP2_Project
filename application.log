@@ -1,0 +1,217 @@
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair '127.0.0.1:3306;databaseName=mydb;user=root;password=root'.
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'localhost:3306;databaseName=mydb;user=root;password=root'.
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Unknown database 'databasename=mydb;user=root;password=root'
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Unknown database 'databasename=mydb/user=root/password=root'
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Unknown database 'databasename=mydb'
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Unknown database 'databasename='mydb''
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Unknown database 'databasename="mydb"'
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: bg.tu_varna.sit.investment_management.data.entities.customer_boards.FK_inventory_number
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: bg.tu_varna.sit.investment_management.data.entities.customer_boards.FK_inventory_number
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: bg.tu_varna.sit.investment_management.data.entities.Products.customer_boards
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: bg.tu_varna.sit.investment_management.data.entities.Products.customer_boards
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: mappedBy reference an unknown target entity property: bg.tu_varna.sit.investment_management.data.entities.customer_boards.customers in bg.tu_varna.sit.investment_management.data.entities.customers.customer_boardsSet
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: mappedBy reference an unknown target entity property: bg.tu_varna.sit.investment_management.data.entities.customer_boards.customers in bg.tu_varna.sit.investment_management.data.entities.customers.customer_boardsSet
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.access.Connection  -Initial sessionFactory created failedorg.hibernate.AnnotationException: mappedBy reference an unknown target entity property: bg.tu_varna.sit.investment_management.data.entities.customer_boards.customers in bg.tu_varna.sit.investment_management.data.entities.customers.customer_boardsSet
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.MolRepository  -Get mol error: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
+ \-[IDENT] IdentNode: 't' {originalText=t}
+ [SELECT t FROM bg.tu_varna.sit.investment_management.data.entities.mol]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: org.hibernate.hql.internal.ast.QuerySyntaxException: products is not mapped [SELECT t FROM products t]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: No row with the given identifier exists: [bg.tu_varna.sit.investment_management.data.entities.customer_boards#0]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: No row with the given identifier exists: [bg.tu_varna.sit.investment_management.data.entities.customer_boards#0]
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: org.hibernate.hql.internal.ast.QuerySyntaxException: products is not mapped [SELECT t FROM products t]
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  -Column 'PK_Description' in on clause is ambiguous
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: org.hibernate.exception.ConstraintViolationException: could not extract ResultSet
+[JavaFX Application Thread] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products
+[JavaFX Application Thread] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products
+ could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.HqlSqlWalker.handleWithFragment(HqlSqlWalker.java:523)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.HqlSqlWalker.createEntityJoin(HqlSqlWalker.java:489)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:389)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3990)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3776)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3654)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:737)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:593)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:330)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:278)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:622)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:734)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:834)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository.getAll(ProductsRepository.java:65)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.business.services.ProductsServices.getAllProducts(ProductsServices.java:24)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.presentation.controllers.HelloController.handle(HelloController.java:51)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:390)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: org.hibernate.hql.internal.ast.QuerySyntaxException: could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products [SELECT t FROM bg.tu_varna.sit.investment_management.data.entities.Products t JOIN bg.tu_varna.sit.investment_management.data.entities.conditions ON( PK_Condition = PK_Conditions ) JOIN bg.tu_varna.sit.investment_management.data.entities.mol ON( PK_MOL = mol_pk_mol ) JOIN bg.tu_varna.sit.investment_management.data.entities.descriptions d ON ( d.PK_Description = t.PK_Descriptions )]
+[JavaFX Application Thread] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products
+[JavaFX Application Thread] ERROR org.hibernate.hql.internal.ast.ErrorTracker  - could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products
+ could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.HqlSqlWalker.handleWithFragment(HqlSqlWalker.java:523)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.HqlSqlWalker.createEntityJoin(HqlSqlWalker.java:489)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:389)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3990)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3776)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3654)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:737)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:593)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:330)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:278)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:622)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:734)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:834)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository.getAll(ProductsRepository.java:65)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.business.services.ProductsServices.getAllProducts(ProductsServices.java:24)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.presentation.controllers.HelloController.handle(HelloController.java:51)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:390)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: org.hibernate.hql.internal.ast.QuerySyntaxException: could not resolve property: PK_Descriptions of: bg.tu_varna.sit.investment_management.data.entities.Products [SELECT t FROM bg.tu_varna.sit.investment_management.data.entities.Products t JOIN bg.tu_varna.sit.investment_management.data.entities.conditions ON( PK_Condition = PK_Conditions ) JOIN bg.tu_varna.sit.investment_management.data.entities.mol ON( PK_MOL = mol_pk_mol ) JOIN bg.tu_varna.sit.investment_management.data.entities.descriptions d ON ( d.PK_Description = t.PK_Descriptions )]
+[JavaFX Application Thread] ERROR org.hibernate.hql.internal.ast.ErrorTracker  -line 1:8: unexpected token: *
+[JavaFX Application Thread] ERROR org.hibernate.hql.internal.ast.ErrorTracker  -line 1:8: unexpected token: *
+line 1:8: unexpected token: *
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlBaseParser.selectClause(HqlBaseParser.java:1380)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1142)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:825)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:336)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:200)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:294)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:622)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:734)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:834)
+	at org.hibernate.orm.core@5.6.1.Final/org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository.getAll(ProductsRepository.java:65)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.business.services.ProductsServices.getAllProducts(ProductsServices.java:24)
+	at bg.tu_varna.sit.investment_management/bg.tu_varna.sit.investment_management.presentation.controllers.HelloController.handle(HelloController.java:51)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3564)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.access$8200(Scene.java:3492)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3860)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1200(Scene.java:3579)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2588)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:390)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.investment_management.data.repositories.ProductsRepository  -Get products error: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: * near line 1, column 8 [SELECT * FROM bg.tu_varna.sit.investment_management.data.entities.Products t]
