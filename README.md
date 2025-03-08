@@ -86,4 +86,5 @@ The system generates automatic notifications for:
 
 ## Architecture
 The system is built using a multilayered architecture, promoting clear structure and modularity. This approach facilitates maintenance, scalability, and clear separation of concerns, allowing each layer to provide specific services to the next higher level, enhancing the overall manageability and extensibility of the application.
-
+For more info, you can check the doc: 
+https://docs.google.com/document/d/1NyyoHplhVx7V-2NhxPqezU14ZBXstKdUrgLj7OdDp9s/edit?usp=sharing
